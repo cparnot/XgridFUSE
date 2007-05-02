@@ -1,0 +1,84 @@
+<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<!-- #bbinclude "xgrid-stanford-head.txt"
+#MY_TITLE#="Xgrid@Stanford"
+#MY_DESCRIPTION#="Xgrid@Stanford, using Xgrid to fit biochemical models"
+-->
+<head>
+	<title>Xgrid@Stanford</title>
+	<meta name="Title" content="Xgrid@Stanford">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="Xgrid@Stanford, using Xgrid to fit biochemical models">
+	<link rel="StyleSheet" href="./xgrid-stanford.css" type="text/css" title="xgrid-stanford">
+</head>
+<!-- end bbinclude -->
+
+<body onload=" setTimeout('refreshBasicGauge()',60000)">
+
+<!-- #bbinclude "xgrid-stanford-header.txt" -->
+<!-- script to refresh the gauge in the header every minute-->
+<script language="JavaScript" type="text/Javascript"><!--
+function refreshBasicGauge() {
+   if (!document.images) return;
+   document.images['gauge-basic'].src ="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/gauge/gauge-basic.png?" + Math.random();
+   setTimeout('refreshBasicGauge()',60000); // refresh every 60 secs
+}
+//-->
+</script>
+
+<div id="Gauge">
+	<p>
+		<a href="./html/stats/stats.html">
+		<!--
+			<img src="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/gauge/gauge-basic.png" alt="" height="60" width="90" name="gauge-basic">
+		-->
+		&nbsp;
+		</a>
+	</p>
+</div>
+<div id="Header">
+	<p>
+		<a href="./index.html">
+			<img src="./graphics/xgrid-at-stanford.jpg" alt="" height="60" width="468">
+		</a>
+	</p>
+</div>
+<div id="Flags">
+<p><img src="./slider.png" alt=""></p>
+<p><a href="../xgrid-stanford/index.html"><img src="./graphics/flags/english.png" alt=""></a><a href="../xgrid-stanford-jp/index.html"><img src="./graphics/flags/japanese.png" alt=""></a><a href="../xgrid-stanford-fr/index.html"><img src="./graphics/flags/french.png" alt=""></a></p>
+</div>
+<div id="Menu">
+	<table align="center">
+		<tr><td width="30"> <a href="./index.html"><img src="./graphics/home.png" alt="Home" height="25" width="75"></a></td></tr>
+		<tr><td width="30"> <a href="./html/install/install.html"><img src="./graphics/install.png" alt="Installation" height="25" width="75"></a></td></tr>
+		<tr><td width="30"> <a href="./html/projects/projects.html"><img src="./graphics/project.png" alt="Project" height="25" width="75"></a></td></tr>
+		<tr><td width="30"> <a href="./html/stats/stats.html"><img src="./graphics/stats.png" alt="Statistics" height="25" width="75"></a></td></tr>
+		<tr><td width="30"> <a href="./html/news/news.html"><img src="./graphics/news.png" alt="News" height="25" width="75"></a></td></tr>
+		<tr><td width="30"> <a href="./html/faqs/faqs.html"><img src="./graphics/faqs.png" alt="FAQs" height="25" width="75"></a></td></tr>
+		<tr><td width="30"> <a href="./html/links/links.html"><img src="./graphics/links.png" alt="Links" height="25" width="75"></a></td></tr>
+		<tr><td width="30"> <a href="./html/goodies/goodies.html"><img src="./graphics/goodies.png" alt="Links" height="25" width="75"></a></td></tr>
+	</table>
+</div>
+<!-- end bbinclude -->
+
+<div ID=Contents>
+
+<!-- Begin markdown contents -->
+
+<!-- End markdown contents -->
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-81039-1";
+urchinTracker();
+</script>
+
+</body>
+
+</html>

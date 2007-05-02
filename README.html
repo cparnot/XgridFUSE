@@ -1,0 +1,138 @@
+<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Xgrid FUSE - Read Me</title>
+	<meta name="Title" content="Xgrid FUSE - Read Me">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="Xgrid FUSE information and instructions">
+	<link rel="StyleSheet" href="./readme-style1.css" type="text/css" title="Xgrid FUSE readme">
+</head>
+
+<body>
+
+<div ID=Contents>
+
+<!-- Begin markdown contents -->
+
+<!-- the file README.markdown is used to generate html output that will be included in the dmg, in the app help at runtime, and on the web site -->
+
+<h2>Xgrid Fuse version 0.2.0</h2>
+
+<p>System Requirements:</p>
+
+<ul>
+<li>Mac OS X 10.4.9 or later</li>
+<li>MacFuse Core 0.2.4 or later</li>
+</ul>
+
+<p>Xgrid Fuse 0.2.0 is a universal binary, and will run natively on both Intel and PowerPC processors.</p>
+
+<p>Created by Charles Parnot.</p>
+
+<p>Copyright Charles Parnot 2007. All rights reserved.</p>
+
+<p>Contact by email (fill the blanks):</p>
+
+<p>charles parnot gmail com</p>
+
+<p>Read more <a href="http://cmgm.stanford.edu/~cparnot/xgrid-stanford">on the web</a></p>
+
+<h2>How to use</h2>
+
+<h3>Installing MacFuse</h3>
+
+<p>Before using Xgrid FUSE, you must install <a href="http://code.google.com/p/macfuse/">MacFuse</a>. This will install a kernel extension and will require a restart of your machine. The installation itself is very simple and straightforward, but you must be aware that MacFuse works at a low level in the OS X system, and any bug in there can have strong consequences on the stability of your system. MacFuse has been remarkably stable for me and for others, but it is still at an early stage and should be considered experimental. Do not use on production systems (whatever that means), and use at your own risks. Read more on the <a href="http://code.google.com/p/macfuse/">MacFuse web site</a>.</p>
+
+<p>Still motivated? Download the latest version from the <a href="http://code.google.com/p/macfuse/">MacFuse web site</a>, double-click the installation  package and follow the instructions.</p>
+
+<h3>Installing Xgrid FUSE</h3>
+
+<p>Copy the Xgrid FUSE application icon into your Applications folder.</p>
+
+<p><img src="readme-copy-to-applications.png" alt="Copying Xgrid FUSE to Applications folder" title="Copying Xgrid FUSE to Applications folder" /></p>
+
+<h3>Runnning Xgrid FUSE</h3>
+
+<p>Double-click on the Xgrid FUSE application icon. A window with a list of local Xgrid controllers should open. To connect to a controller, select it in the list, and click the Connect button (double-arrow icon), or press return. You can also connect to a remote controller by clicking the '+' button and type its address in the sheet that opens. You may be asked for the password to your Xgrid controller.</p>
+
+<p><img src="readme-connect-window.png" alt="Connection window" title="Connection window" /></p>
+
+<p>A new volume should appear on the Desktop (for command-line users, check the /Volumes directory). Inside this volume, you can browse the controller hierarchy, from the grids (usually only one), down to jobs, tasks, and result files. Note that result files will only upload after you select a job. It may take a while to download all the files if your results are large files, or if your connection to the controller is slow.</p>
+
+<p><img src="readme-xgrid-filesystem-hierarchy.png" alt="Xgrid filesystem hierarchy" title="Xgrid filesystem hierarchy" /></p>
+
+<p>Grids and jobs will appear as folder with a name composed of their identifier followed by their actual name (e.g. '-10- My Grid' or '-19289- fasta job'). Tasks will appear as folders, named after their task index. While the results are still loading, the task name will have include the word "loading..." after the task index.</p>
+
+<p><img src="readme-loading-results.png" alt="Loading job results" title="Loading job results" /></p>
+
+<h3>Quitting Xgrid FUSE</h3>
+
+<p>To quit Xgrid FUSE, eject the disk corresponding to the Xgrid controller. A lost connection should have the same effect (with the possibility of an annoying spinning beach ball first).</p>
+
+<p><img src="readme-disconnect.png" alt="Disconnect to quit" title="Disconnect to quit" /></p>
+
+<h3>Known limitations and bugs</h3>
+
+<ul>
+<li>There is no apparent way to quit Xgrid FUSE when you change your mind and don't want to initiate any connection. It is in fact very easy: Command-Q works as expected, because the menu is not displayed but is actually listening. Of course, /bin/kill also works.</li>
+<li>You cannot open more than one controller at a time.</li>
+<li>The memory used by Xgrid FUSE will be as big as the files that you upload for your job results, which might be too big in some cases, and will cause Xgrid FUSE to crash. Watch out!</li>
+<li>The Finder will not always display the most recent version of the jobs, tasks and files. Move up and down the hierarchy to force refreshes.</li>
+<li>If you upload the results from a job that is not yet finished, it will only upload the partial results, and will not properly update the content later. The only workaround is to eject the Xgrid volume and restart Xgrid FUSE.</li>
+</ul>
+
+<h2>Credits</h2>
+
+<p>Great big thanks to all these terrific people!</p>
+
+<ul>
+<li><a href="http://fuse.sourceforge.net/">FUSE project</a></li>
+<li><a href="http://code.google.com/p/macfuse/">MacFUSE</a>: Amit Singh (Google, Inc.)</li>
+<li><a href="http://groups.google.com/group/macfuse-devel/browse_thread/thread/45eaaa84d3fae84f/7066f10e217ba19e">macfuse-objc</a>: Cole Jitkoff, Greg Miller and Ted Bonkenburg</li>
+<li><a href="http://iconfamily.sourceforge.net/">IconFamily source code</a>: Troy N. Stephens</li>
+<li><a href="http://www.ghosttiger.com/?p=117">GTResourceFork</a> : Jonathan Grynspan</li>
+</ul>
+
+<h2>Licenses</h2>
+
+<ul>
+<li>The code for Xgrid FUSE is open source, and released under the <a href="License-GPL.txt">GPL license</a></li>
+<li>Xgrid FUSE does not directly use any of the MacFuse code and does not include the binary in its distribution. But of course, XgridFuse needs MacFuse to be able to do anything; the MacFuse source code and binaries are released under a "BSD-style license" (see also <a href="http://code.google.com/p/macfuse/">the MacFUSE website</a>)</li>
+<li>The binary for the macfuse-objc wrappers is used by Xgrid FUSE, in the form of the MacFUSE-ObjC framework. Read the license in file 'macfuse-objc-license.txt'</li>
+<li>IconFamily 0.9.2 - <a href="IconFamily-GTResourceFork-licenses.txt">MIT License</a> </li>
+<li>GTResourceFork - <a href="IconFamily-GTResourceFork-licenses.txt">MIT License</a></li>
+<li>The Xgrid functionality is provided by the GridEZ framework, released by myself, available for <a href="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/GridEZ-info.html">download</a> under the <a href="GridEZ-license.txt">LGPL license</a></li>
+<li>See also source files for attributions and licenses</li>
+</ul>
+
+<h2>Change Log</h2>
+
+<p>version 0.2.0
+(May 2007)</p>
+
+<ul>
+<li>First public release</li>
+<li>Added "How to use" section in the README file</li>
+<li>Task names now displays a "loading..." suffix while results are loadin</li>
+<li>Separate framework for MacFuse-ObjC</li>
+<li>Instructing GridEZ to use an in-memory coredata store, via GEZStoreType entry in the Info.plist file</li>
+</ul>
+
+<p>version 0.1.0
+(April 2007)</p>
+
+<ul>
+<li>First working version</li>
+<li>Initial svn import</li>
+</ul>
+
+
+<!-- End markdown contents -->
+
+</div>
+
+</body>
+
+</html>

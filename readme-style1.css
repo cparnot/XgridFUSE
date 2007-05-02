@@ -1,0 +1,92 @@
+BODY {
+	font-family: arial, sans-serif;
+	font-style: normal;
+	font-size: medium;
+	background: #ffffff;
+	color: #000000;
+	text-align:justify;
+}
+
+
+
+DIV#Contents {
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 25px;
+	left: 90px;
+	bottom: auto;
+}
+
+DIV#Contents P {
+	margin: 0.5em 20% 0em 1em;
+}
+
+DIV#Contents P.offset {
+	margin-left:3.5em;
+}
+
+DIV#Contents P.small {
+	font-size:smaller;
+	text-align:right;
+}
+
+DIV#Contents P.small-justify {
+	font-size:smaller;
+}
+
+DIV#Contents H1 {
+	font-size: larger;
+	margin: 1.5em 20% 0em 0em;
+	font-weight:bold;
+	text-align:left;
+}
+
+DIV#Contents H2 {
+	font-size: larger;
+	margin: 1.5em 20% 0em 0em;
+	font-weight:bold;
+	text-align:left;
+}
+
+DIV#Contents H3 {
+	font-size: medium;
+	font-style: italic;
+	margin: 1em 20% 0em 1em;
+	text-align:left;
+}
+
+DIV#Contents PRE {
+	margin: 1em 20% 1em 2.5em;
+	text-align:left;
+}
+
+DIV#Contents LI {
+	margin: 0.5em 20% 0em 1em;
+	/*text-align:left;*/
+	text-align:justify;
+}
+
+DIV#Contents LI P {
+	margin: 0.5em 0% 0em 0.3em;
+	text-align:justify;
+}
+
+A:link {
+	text-decoration: none;
+	color: #338800;
+}
+A:visited {
+	text-decoration: none;
+	color: #338800;
+}
+A:hover {
+	text-decoration: none;
+	color: #338800;
+	background: #DDFFDD;
+}
+A:active {
+	text-decoration: none;
+	color: #338800;
+	background: #99EE99;
+}

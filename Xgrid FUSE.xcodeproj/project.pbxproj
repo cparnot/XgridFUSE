@@ -20,6 +20,19 @@
 		56A5006D0BE81AF5006A5B3F /* MacFUSE-ObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A5006C0BE81AF5006A5B3F /* MacFUSE-ObjC.framework */; };
 		56A5006E0BE81AF5006A5B3F /* MacFUSE-ObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A5006C0BE81AF5006A5B3F /* MacFUSE-ObjC.framework */; };
 		56A500720BE81B06006A5B3F /* MacFUSE-ObjC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56A5006C0BE81AF5006A5B3F /* MacFUSE-ObjC.framework */; };
+		56A500A20BE81D34006A5B3F /* IconFamily-GTResourceFork-licenses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 56A500A10BE81D34006A5B3F /* IconFamily-GTResourceFork-licenses.txt */; };
+		56A500DE0BE8204A006A5B3F /* GridEZ-license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 56A500DD0BE8204A006A5B3F /* GridEZ-license.txt */; };
+		56A501510BE8218D006A5B3F /* License-GPL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 56A501500BE8218D006A5B3F /* License-GPL.txt */; };
+		56A5029C0BE94885006A5B3F /* README.html in Resources */ = {isa = PBXBuildFile; fileRef = 56A5029B0BE94885006A5B3F /* README.html */; };
+		56A502B00BE9499A006A5B3F /* readme-generate.pl in Resources */ = {isa = PBXBuildFile; fileRef = 56A502AF0BE9499A006A5B3F /* readme-generate.pl */; };
+		56A502DB0BE94AE4006A5B3F /* README-template1.html in Resources */ = {isa = PBXBuildFile; fileRef = 56A502DA0BE94AE4006A5B3F /* README-template1.html */; };
+		56A502FF0BE94FE7006A5B3F /* README-template2.html in Resources */ = {isa = PBXBuildFile; fileRef = 56A502FE0BE94FE7006A5B3F /* README-template2.html */; };
+		56A503150BE950E9006A5B3F /* readme-style1.css in Resources */ = {isa = PBXBuildFile; fileRef = 56A503140BE950E9006A5B3F /* readme-style1.css */; };
+		56A5032E0BE95881006A5B3F /* readme-connect-window.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A503290BE95881006A5B3F /* readme-connect-window.png */; };
+		56A5032F0BE95881006A5B3F /* readme-copy-to-applications.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032A0BE95881006A5B3F /* readme-copy-to-applications.png */; };
+		56A503300BE95881006A5B3F /* readme-disconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032B0BE95881006A5B3F /* readme-disconnect.png */; };
+		56A503310BE95881006A5B3F /* readme-loading-results.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032C0BE95881006A5B3F /* readme-loading-results.png */; };
+		56A503320BE95881006A5B3F /* readme-xgrid-filesystem-hierarchy.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032D0BE95881006A5B3F /* readme-xgrid-filesystem-hierarchy.png */; };
 		56DEF0B30BA79FF8000EA01E /* XgridFusePaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DEF0B20BA79FF8000EA01E /* XgridFusePaths.m */; };
 		56DF22AE0BB10CA4006A0B66 /* TestXgridFusePaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DF22AB0BB10C9B006A0B66 /* TestXgridFusePaths.m */; };
 		56DF23360BB1F1AF006A0B66 /* GridEZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5624A6530BA77501005AE1E6 /* GridEZ.framework */; };
@@ -79,6 +92,19 @@
 		569499DA0BE59C7F005C986E /* macfuse-objc-license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "macfuse-objc-license.txt"; sourceTree = "<group>"; };
 		56949A070BE59E1A005C986E /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		56A5006C0BE81AF5006A5B3F /* MacFUSE-ObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MacFUSE-ObjC.framework"; path = "../../../../Xcode/Products/Release/MacFUSE-ObjC.framework"; sourceTree = SOURCE_ROOT; };
+		56A500A10BE81D34006A5B3F /* IconFamily-GTResourceFork-licenses.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "IconFamily-GTResourceFork-licenses.txt"; sourceTree = "<group>"; };
+		56A500DD0BE8204A006A5B3F /* GridEZ-license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GridEZ-license.txt"; sourceTree = "<group>"; };
+		56A501500BE8218D006A5B3F /* License-GPL.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "License-GPL.txt"; sourceTree = "<group>"; };
+		56A5029B0BE94885006A5B3F /* README.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; path = README.html; sourceTree = "<group>"; };
+		56A502AF0BE9499A006A5B3F /* readme-generate.pl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.perl; path = "readme-generate.pl"; sourceTree = "<group>"; };
+		56A502DA0BE94AE4006A5B3F /* README-template1.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; path = "README-template1.html"; sourceTree = "<group>"; };
+		56A502FE0BE94FE7006A5B3F /* README-template2.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; path = "README-template2.html"; sourceTree = "<group>"; };
+		56A503140BE950E9006A5B3F /* readme-style1.css */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "readme-style1.css"; sourceTree = "<group>"; };
+		56A503290BE95881006A5B3F /* readme-connect-window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "readme-connect-window.png"; sourceTree = "<group>"; };
+		56A5032A0BE95881006A5B3F /* readme-copy-to-applications.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "readme-copy-to-applications.png"; sourceTree = "<group>"; };
+		56A5032B0BE95881006A5B3F /* readme-disconnect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "readme-disconnect.png"; sourceTree = "<group>"; };
+		56A5032C0BE95881006A5B3F /* readme-loading-results.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "readme-loading-results.png"; sourceTree = "<group>"; };
+		56A5032D0BE95881006A5B3F /* readme-xgrid-filesystem-hierarchy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "readme-xgrid-filesystem-hierarchy.png"; sourceTree = "<group>"; };
 		56DEF0B10BA79FF8000EA01E /* XgridFusePaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XgridFusePaths.h; sourceTree = "<group>"; };
 		56DEF0B20BA79FF8000EA01E /* XgridFusePaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XgridFusePaths.m; sourceTree = "<group>"; };
 		56DF22A00BB10C50006A0B66 /* Xgrid FUSE tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Xgrid FUSE tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,10 +179,7 @@
 		29B97314FDCFA39411CA2CEA /* Xgrid FUSE */ = {
 			isa = PBXGroup;
 			children = (
-				56949A070BE59E1A005C986E /* README.markdown */,
-				5624A6060BA74EE6005AE1E6 /* Dev-Notes.markdown */,
-				563FE6350BB49127007DA165 /* TODO.markdown */,
-				569499DA0BE59C7F005C986E /* macfuse-objc-license.txt */,
+				56A502620BE93F68006A5B3F /* Documentation */,
 				29B97315FDCFA39411CA2CEA /* Xgrid FUSE */,
 				56DF22A70BB10C77006A0B66 /* Tests */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -202,6 +225,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		56A502620BE93F68006A5B3F /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				56949A070BE59E1A005C986E /* README.markdown */,
+				56A502AF0BE9499A006A5B3F /* readme-generate.pl */,
+				56A5029B0BE94885006A5B3F /* README.html */,
+				56A502DA0BE94AE4006A5B3F /* README-template1.html */,
+				56A502FE0BE94FE7006A5B3F /* README-template2.html */,
+				56A503140BE950E9006A5B3F /* readme-style1.css */,
+				56A503200BE95842006A5B3F /* Readme-images */,
+				563FE6350BB49127007DA165 /* TODO.markdown */,
+				5624A6060BA74EE6005AE1E6 /* Dev-Notes.markdown */,
+				56A501500BE8218D006A5B3F /* License-GPL.txt */,
+				56A500DD0BE8204A006A5B3F /* GridEZ-license.txt */,
+				569499DA0BE59C7F005C986E /* macfuse-objc-license.txt */,
+				56A500A10BE81D34006A5B3F /* IconFamily-GTResourceFork-licenses.txt */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		56A503200BE95842006A5B3F /* Readme-images */ = {
+			isa = PBXGroup;
+			children = (
+				56A503290BE95881006A5B3F /* readme-connect-window.png */,
+				56A5032A0BE95881006A5B3F /* readme-copy-to-applications.png */,
+				56A5032B0BE95881006A5B3F /* readme-disconnect.png */,
+				56A5032C0BE95881006A5B3F /* readme-loading-results.png */,
+				56A5032D0BE95881006A5B3F /* readme-xgrid-filesystem-hierarchy.png */,
+			);
+			name = "Readme-images";
+			sourceTree = "<group>";
+		};
 		56DF22A70BB10C77006A0B66 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +298,7 @@
 				56E210EC0BAA5BB900ED9BF9 /* CopyFiles */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				56A5025C0BE93EFA006A5B3F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -289,12 +345,43 @@
 				569499CA0BE599DA005C986E /* XgridFuseApp.icns in Resources */,
 				569499DB0BE59C7F005C986E /* macfuse-objc-license.txt in Resources */,
 				56949A080BE59E1A005C986E /* README.markdown in Resources */,
+				56A500A20BE81D34006A5B3F /* IconFamily-GTResourceFork-licenses.txt in Resources */,
+				56A500DE0BE8204A006A5B3F /* GridEZ-license.txt in Resources */,
+				56A501510BE8218D006A5B3F /* License-GPL.txt in Resources */,
+				56A5029C0BE94885006A5B3F /* README.html in Resources */,
+				56A502B00BE9499A006A5B3F /* readme-generate.pl in Resources */,
+				56A502DB0BE94AE4006A5B3F /* README-template1.html in Resources */,
+				56A502FF0BE94FE7006A5B3F /* README-template2.html in Resources */,
+				56A503150BE950E9006A5B3F /* readme-style1.css in Resources */,
+				56A5032E0BE95881006A5B3F /* readme-connect-window.png in Resources */,
+				56A5032F0BE95881006A5B3F /* readme-copy-to-applications.png in Resources */,
+				56A503300BE95881006A5B3F /* readme-disconnect.png in Resources */,
+				56A503310BE95881006A5B3F /* readme-loading-results.png in Resources */,
+				56A503320BE95881006A5B3F /* readme-xgrid-filesystem-hierarchy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		56A5025C0BE93EFA006A5B3F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/README.markdown",
+				"$(SRCROOT)/prepare-readme-files.pl",
+				"$(SRCROOT)/README-template2.html",
+				"$(SRCROOT)/README-template1.html",
+			);
+			outputPaths = (
+				"$(SRCROOT)/README.html",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#calling the perl script that will do the job - see script in the project\n./readme-generate.pl;";
+		};
 		56DF229E0BB10C50006A0B66 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
