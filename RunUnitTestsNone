@@ -1,0 +1,214 @@
+#!/bin/sh
+
+# The script was modified to pass the -SenTest None argument to otest when running through an application Test Host, instead of -SenTest All. The tests can then be programatically triggered (e.g. after an Xgrid controller is available) instead of being run immediately. The modified script can be used both for Building (see Run Script phase of the test target) and Running (see Executable "RunTests"). Everything else stays the same, so that the executable Xgrid FUSE is run with the test bundle injected.
+
+# To work properly when used as an Executable in Run mode, there are a number of environment variables that need to be properly set:
+#  * Working directory (set in the General tab of the Executable inspector) = Project Directory, so the script can be a relative path and easily found by Xcode; no need for an absolute path
+#  * TARGET_NAME, normally set by Xcode when building, needs to be set manually (Arguments tab of the inspector)
+#  * WRAPPER_EXTENSION, same thing
+#  * BUILT_PRODUCTS_DIR, same thing
+#  * SYSTEM_LIBRARY_DIR, same thing (the script provided by Apple makes an educated guess at SYSTEM_DEVELOPER_DIR, but not at this one...)
+#  * TEST_HOST, which is normally set by Xcode when building, as part of the custom settings that one needs to add to run tests inside  a GUI app
+
+
+
+
+##
+# Copyright 2005 Apple Computer, Inc.
+# All rights reserved.
+#
+# This script runs all of the unit tests for the target test bundle specified by the passed-in environment.
+##
+#
+# Input:
+#   ACTION - the build action being invoked (must be "build" to run tests)
+#   TEST_HOST (optional) - the host application to inject the tests into, normally unset
+#   TEST_BUNDLE_PATH (optional) - the path of the test bundle to be tested, normally derived
+#   TEST_RIG (optional) - the test rig to use, normally derived
+#   OTEST (optional) - path to the otest test rig
+#   CPLUSTESTRIG (optional) - path to the CPlusTest test rig
+#   BUILT_PRODUCTS_DIR - the directory containing built products
+#   TARGET_NAME - the name of the test bundle to be used
+#   WRAPPER_EXTENSION - the wrapper extension of the test bundle to be used (octest or cptest)
+#   SYSTEM_DEVELOPER_DIR - developer tools path
+#   
+
+Fail() {
+# usage: Fail line message
+# Echo the message to stdout and return 1, the universal error code
+    echo "${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests:${1}: error: ${2}"
+    exit 1
+}
+
+### Set main build settings we rely on to sensible defaults in case this is run standalone.  The user must still specify at least TARGET_NAME and WRAPPER_EXTENSION, but the rest can be inferred.
+
+if [ "X${ACTION}" = "X" ]; then
+    ACTION=build
+fi
+
+if [ "X${SYSTEM_DEVELOPER_DIR}" = "X" ]; then
+    SYSTEM_DEVELOPER_DIR=/Developer
+fi
+
+echo "SYSTEM_DEVELOPER_DIR = ${SYSTEM_DEVELOPER_DIR}"
+
+if [ "X${BUILT_PRODUCTS_DIR}" = "X" ]; then
+    BUILT_PRODUCTS_DIR=`pwd`
+fi
+
+echo "BUILT_PRODUCTS_DIR = ${BUILT_PRODUCTS_DIR}"
+
+### Define sensible defaults for the path to the otest and CPlusTestRig tools, but allow them to be overridden.
+
+if [ "X${OTEST}" = "X" ]; then
+    OTEST="${SYSTEM_DEVELOPER_DIR}/Tools/otest"
+fi
+
+if [ "X${CPLUSTESTRIG}" = "X" ]; then
+    CPLUSTESTRIG="${SYSTEM_DEVELOPER_DIR}/Tools/CPlusTestRig"
+fi
+
+### Do not run tests on anything but a "build".
+
+if [ "${ACTION}" != "build" ]; then
+    exit 0
+fi
+
+### Don't do anything if the user didn't specify a TARGET_NAME or a WRAPPER_EXTENSION.
+
+if [ "X${TARGET_NAME}" = "X" ]; then
+    Fail 62 "No TARGET_NAME specified, please set it to the name of your unit test bundle with no extension."
+fi
+
+if [ "X${WRAPPER_EXTENSION}" = "X" ]; then
+    Fail 66 "No WRAPPER_EXTENSION specified, please set it to the extension of your unit test bundle."
+fi
+
+### Set up the test bundle path for later.
+
+if [ "X${TEST_BUNDLE_PATH}" = "X" ]; then
+    TEST_BUNDLE_PATH="${BUILT_PRODUCTS_DIR}/${TARGET_NAME}.${WRAPPER_EXTENSION}"
+fi
+
+RunTestsForApplication() {
+# usage: RunTestsForApplication application-path test-bundle-path
+# Runs the application, injecting the given unit tests into them via the bundle injector.
+    
+    case "${WRAPPER_EXTENSION}" in
+        octest)
+            TEST_HOST_FLAGS="-SenTest None"
+            ;;
+        
+        *)
+            TEST_HOST_FLAGS=
+            ;;
+    esac
+    
+    if [ "X${DYLD_INSERT_LIBRARIES}" != "X" ]; then
+        DYLD_INSERT_LIBRARIES="${SYSTEM_LIBRARY_DIR}/PrivateFrameworks/DevToolsBundleInjection.framework/DevToolsBundleInjection:${DYLD_INSERT_LIBRARIES}"
+    else
+        DYLD_INSERT_LIBRARIES="${SYSTEM_LIBRARY_DIR}/PrivateFrameworks/DevToolsBundleInjection.framework/DevToolsBundleInjection"
+    fi
+    export DYLD_INSERT_LIBRARIES
+    
+    XCInjectBundle="${2}"
+    export XCInjectBundle
+    
+    export DYLD_FRAMEWORK_PATH
+    export DYLD_LIBRARY_PATH
+    export DYLD_NEW_LOCAL_SHARED_REGIONS
+    export DYLD_NO_FIX_PREBINDING
+    
+    "${TEST_HOST}" ${TEST_HOST_FLAGS}
+    TEST_HOST_RESULT=$?
+
+    unset DYLD_FRAMEWORK_PATH
+    unset DYLD_LIBRARY_PATH
+    unset DYLD_NEW_LOCAL_SHARED_REGIONS
+    unset DYLD_NO_FIX_PREBINDING
+    
+    unset DYLD_INSERT_LIBRARIES
+    unset XCInjectBundle
+    exit ${TEST_HOST_RESULT}
+}
+
+Main() {
+# usage: Main
+# Determine how tests need to be run and run them.
+    
+    if [ "x${TEST_HOST}" != "x" ]; then
+        # All applications are tested the same way, by injecting a bundle.
+        # The bundle needs to configure and run the tests itself somehow.
+        
+        RunTestsForApplication "${TEST_HOST}" "${TEST_BUNDLE_PATH}"
+    else
+        # If no TEST_HOST is specified, assume we're testing a framework.
+        # The bundle should link against the framework.
+        # The bundle's extension tells us which test rig to use if one isn't supplied.
+        
+        if [ "X${TEST_RIG}" = "X" ]; then
+            case "${WRAPPER_EXTENSION}" in
+                octest)
+                    TEST_RIG="${OTEST}"
+                    ;;
+                
+                cptest)
+                    TEST_RIG="${CPLUSTESTRIG}"
+                    ;;
+                
+                *)
+                    Fail 130 "Unknown type of test bundle '${WRAPPER_EXTENSION}', and no test rig supplied via TEST_RIG."
+                    ;;
+            esac
+        fi
+        
+        # Run the test rig against the test bundle.
+        
+        export DYLD_FRAMEWORK_PATH
+        export DYLD_LIBRARY_PATH
+        export DYLD_NEW_LOCAL_SHARED_REGIONS
+        export DYLD_NO_FIX_PREBINDING
+       
+        "${TEST_RIG}" "${TEST_BUNDLE_PATH}"
+        TEST_RIG_RESULT=$?
+        
+        unset DYLD_FRAMEWORK_PATH
+        unset DYLD_LIBRARY_PATH
+        unset DYLD_NEW_LOCAL_SHARED_REGIONS
+        unset DYLD_NO_FIX_PREBINDING
+        
+        # If the test rig crashed, make sure the error is reported.
+        
+        if [ ${TEST_RIG_RESULT} -gt 1 ]; then
+            Fail 153 "Test rig '${TEST_RIG}' exited abnormally with code ${TEST_RIG_RESULT} (it may have crashed)."
+        fi
+        exit ${TEST_RIG_RESULT}
+    fi
+}
+
+### Update the dyld environment to support running tests out of the build directory.
+
+# Sets and exports the following environment variables:
+#   DYLD_FRAMEWORK_PATH
+#   DYLD_LIBRARY_PATH
+#   DYLD_NEW_LOCAL_SHARED_REGIONS
+#   DYLD_NO_FIX_PREBINDING
+
+if [ "X${DYLD_FRAMEWORK_PATH}" != "X" ]; then
+    DYLD_FRAMEWORK_PATH="${BUILT_PRODUCTS_DIR}:${DYLD_FRAMEWORK_PATH}"
+else
+    DYLD_FRAMEWORK_PATH="${BUILT_PRODUCTS_DIR}"
+fi
+
+if [ "X${DYLD_LIBRARY_PATH}" != "X" ]; then
+    DYLD_LIBRARY_PATH="${BUILT_PRODUCTS_DIR}:${DYLD_LIBRARY_PATH}"
+else
+    DYLD_LIBRARY_PATH="${BUILT_PRODUCTS_DIR}"
+fi
+
+DYLD_NEW_LOCAL_SHARED_REGIONS=YES
+DYLD_NO_FIX_PREBINDING=YES
+
+### Run the tests
+
+Main
