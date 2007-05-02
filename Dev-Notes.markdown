@@ -1,27 +1,15 @@
 
-# Xcode project setup
+# Adding MacFUSE-ObjC.framework
 
-This is what I had to do to get the project to compile even before adding a FUSEFileSystem subclass:
-
-* Install MacFUSE-Core
-* Create a new Cocoa application
-* **Copy** files from macfuse/filesystems-objc/FUSEObjC
-* Remove FUSEMain.m
-* Remove MainMenu.nib
-* Add Carbon.framework to the target
-* Add libfuse.dylib (/usr/local/lib) to the target
-* Modify the Build settings of the Target inspector as follows (for "All Configurations"):
-	* Add /usr/local/include to the "Header Search Paths" 
-	* Add /usr/local/lib to the "Library Search Paths"
-	* Add _FILE_OFFSET_BITS=64 to "Preprocessor Macros"
-	* Enable "Enable Objective-C exception handling"
+* Built using files from macfuse/filesystems-objc/FUSEObjC
+* Framework is embedded (copied) in the final app package, in subdir 'Frameworks', using a 'Copy Files' build phase
 
 
 # Adding GridEZ.framework
 
 * Download from XGrid@Stanford website
 * Read instructions from download
-* Framework is embedded (copied) in the final app package
+* Framework is embedded (copied) in the final app package, in subdir 'Frameworks', using a 'Copy Files' build phase
 
 
 # Subclassing FUSEFileSystem
@@ -31,7 +19,6 @@ This is what I had to do to get the project to compile even before adding a FUSE
 * Override 'shouldStartFuse' to return NO to avoid auto-mounting when app launches
 * Call [seld startFuse] on a separate thread to start connection manually
 * Only one filesystem can be mounted per application process
-
 
 
 # How does FUSEFileSystem superclass work?
