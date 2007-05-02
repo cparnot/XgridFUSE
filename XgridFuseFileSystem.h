@@ -6,7 +6,7 @@
 //  Copyright 2007 __MyCompanyName__. All rights reserved.
 //
 
-#import "FUSEFileSystem.h"
+#import <MacFUSE-ObjC/FUSEFileSystem.h>
 
 
 @interface XgridFuseFileSystem : FUSEFileSystem
