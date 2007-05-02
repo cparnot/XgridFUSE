@@ -26,6 +26,8 @@
 	<string>NSApplication</string>
 	<key>LSUIElement</key>
 	<string>1</string>
+	<key>GEZStoreType</key>
+	<string>InMemory</string>
 	<key>NSUserDefaults</key>
 	<dict>
 		<key>DebugLogVerboseLevel</key>
