@@ -29,18 +29,8 @@
 		56DF22AE0BB10CA4006A0B66 /* TestXgridFusePaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DF22AB0BB10C9B006A0B66 /* TestXgridFusePaths.m */; };
 		56DF23360BB1F1AF006A0B66 /* GridEZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5624A6530BA77501005AE1E6 /* GridEZ.framework */; };
 		56DF23370BB1F1B4006A0B66 /* XgridFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565505AE0BA7D20F00288B0F /* XgridFoundation.framework */; };
-		56E20EDE0BA922B400ED9BF9 /* XgridFuseApp-OLD.icns in Resources */ = {isa = PBXBuildFile; fileRef = 56E20EDC0BA922B300ED9BF9 /* XgridFuseApp-OLD.icns */; };
 		56E20FA20BA9DB9A00ED9BF9 /* XgridFuseDisk.icns in Resources */ = {isa = PBXBuildFile; fileRef = 56E20FA10BA9DB9A00ED9BF9 /* XgridFuseDisk.icns */; };
-		56E20FD20BA9DD8F00ED9BF9 /* grid-folder.icns in Resources */ = {isa = PBXBuildFile; fileRef = 56E20FD10BA9DD8F00ED9BF9 /* grid-folder.icns */; };
 		56E210FB0BAA5BC900ED9BF9 /* GridEZ.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5624A6530BA77501005AE1E6 /* GridEZ.framework */; };
-		56E211170BAA67AE00ED9BF9 /* icons.ai in Resources */ = {isa = PBXBuildFile; fileRef = 56E211160BAA67AE00ED9BF9 /* icons.ai */; };
-		56E2113F0BAA6EDE00ED9BF9 /* IconFailed.icns in Resources */ = {isa = PBXBuildFile; fileRef = 56E211380BAA6EDE00ED9BF9 /* IconFailed.icns */; };
-		56E211400BAA6EDE00ED9BF9 /* IconFinished.icns in Resources */ = {isa = PBXBuildFile; fileRef = 56E211390BAA6EDE00ED9BF9 /* IconFinished.icns */; };
-		56E211410BAA6EDE00ED9BF9 /* IconLoading.icns in Resources */ = {isa = PBXBuildFile; fileRef = 56E2113A0BAA6EDE00ED9BF9 /* IconLoading.icns */; };
-		56E211420BAA6EDE00ED9BF9 /* IconPending.icns in Resources */ = {isa = PBXBuildFile; fileRef = 56E2113B0BAA6EDE00ED9BF9 /* IconPending.icns */; };
-		56E211430BAA6EDE00ED9BF9 /* IconRetrieved.icns in Resources */ = {isa = PBXBuildFile; fileRef = 56E2113C0BAA6EDE00ED9BF9 /* IconRetrieved.icns */; };
-		56E211440BAA6EDE00ED9BF9 /* IconRetrieving.icns in Resources */ = {isa = PBXBuildFile; fileRef = 56E2113D0BAA6EDE00ED9BF9 /* IconRetrieving.icns */; };
-		56E211450BAA6EDE00ED9BF9 /* IconRunning.icns in Resources */ = {isa = PBXBuildFile; fileRef = 56E2113E0BAA6EDE00ED9BF9 /* IconRunning.icns */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -119,21 +109,7 @@
 		56DF22AA0BB10C9B006A0B66 /* TestXgridFusePaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestXgridFusePaths.h; sourceTree = "<group>"; };
 		56DF22AB0BB10C9B006A0B66 /* TestXgridFusePaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestXgridFusePaths.m; sourceTree = "<group>"; };
 		56DF24A70BB31819006A0B66 /* RunUnitTestsNone */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = RunUnitTestsNone; sourceTree = "<group>"; };
-		56E20ED30BA91EBD00ED9BF9 /* folder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = folder.icns; sourceTree = "<group>"; };
-		56E20EDB0BA922B300ED9BF9 /* XgridFuse.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = XgridFuse.icns; sourceTree = "<group>"; };
-		56E20EDC0BA922B300ED9BF9 /* XgridFuseApp-OLD.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "XgridFuseApp-OLD.icns"; sourceTree = "<group>"; };
-		56E20F970BA9BD3A00ED9BF9 /* Removable.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Removable.icns; sourceTree = "<group>"; };
-		56E20F990BA9BD5D00ED9BF9 /* External.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = External.icns; sourceTree = "<group>"; };
 		56E20FA10BA9DB9A00ED9BF9 /* XgridFuseDisk.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = XgridFuseDisk.icns; sourceTree = "<group>"; };
-		56E20FD10BA9DD8F00ED9BF9 /* grid-folder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "grid-folder.icns"; sourceTree = "<group>"; };
-		56E211160BAA67AE00ED9BF9 /* icons.ai */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = icons.ai; sourceTree = "<group>"; };
-		56E211380BAA6EDE00ED9BF9 /* IconFailed.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = IconFailed.icns; path = Icons/IconFailed.icns; sourceTree = "<group>"; };
-		56E211390BAA6EDE00ED9BF9 /* IconFinished.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = IconFinished.icns; path = Icons/IconFinished.icns; sourceTree = "<group>"; };
-		56E2113A0BAA6EDE00ED9BF9 /* IconLoading.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = IconLoading.icns; path = Icons/IconLoading.icns; sourceTree = "<group>"; };
-		56E2113B0BAA6EDE00ED9BF9 /* IconPending.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = IconPending.icns; path = Icons/IconPending.icns; sourceTree = "<group>"; };
-		56E2113C0BAA6EDE00ED9BF9 /* IconRetrieved.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = IconRetrieved.icns; path = Icons/IconRetrieved.icns; sourceTree = "<group>"; };
-		56E2113D0BAA6EDE00ED9BF9 /* IconRetrieving.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = IconRetrieving.icns; path = Icons/IconRetrieving.icns; sourceTree = "<group>"; };
-		56E2113E0BAA6EDE00ED9BF9 /* IconRunning.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = IconRunning.icns; path = Icons/IconRunning.icns; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Xgrid FUSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xgrid FUSE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -242,16 +218,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				56E211160BAA67AE00ED9BF9 /* icons.ai */,
 				56E20FA10BA9DB9A00ED9BF9 /* XgridFuseDisk.icns */,
 				569499C90BE599DA005C986E /* XgridFuseApp.icns */,
-				56E20EDC0BA922B300ED9BF9 /* XgridFuseApp-OLD.icns */,
-				56E20EDB0BA922B300ED9BF9 /* XgridFuse.icns */,
-				56E20FD10BA9DD8F00ED9BF9 /* grid-folder.icns */,
-				56E20F990BA9BD5D00ED9BF9 /* External.icns */,
-				56E20F970BA9BD3A00ED9BF9 /* Removable.icns */,
-				56E211460BAA6EED00ED9BF9 /* Job icons */,
-				56E20ED30BA91EBD00ED9BF9 /* folder.icns */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
@@ -334,20 +302,6 @@
 			name = Tests;
 			sourceTree = "<group>";
 		};
-		56E211460BAA6EED00ED9BF9 /* Job icons */ = {
-			isa = PBXGroup;
-			children = (
-				56E211380BAA6EDE00ED9BF9 /* IconFailed.icns */,
-				56E211390BAA6EDE00ED9BF9 /* IconFinished.icns */,
-				56E2113A0BAA6EDE00ED9BF9 /* IconLoading.icns */,
-				56E2113B0BAA6EDE00ED9BF9 /* IconPending.icns */,
-				56E2113C0BAA6EDE00ED9BF9 /* IconRetrieved.icns */,
-				56E2113D0BAA6EDE00ED9BF9 /* IconRetrieving.icns */,
-				56E2113E0BAA6EDE00ED9BF9 /* IconRunning.icns */,
-			);
-			name = "Job icons";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -423,17 +377,7 @@
 				5624A5C30BA72E76005AE1E6 /* IconFamily.html in Resources */,
 				5624A5C60BA72E76005AE1E6 /* README.txt in Resources */,
 				5624A5D60BA72E77005AE1E6 /* Fuse.icns in Resources */,
-				56E20EDE0BA922B400ED9BF9 /* XgridFuseApp-OLD.icns in Resources */,
 				56E20FA20BA9DB9A00ED9BF9 /* XgridFuseDisk.icns in Resources */,
-				56E20FD20BA9DD8F00ED9BF9 /* grid-folder.icns in Resources */,
-				56E211170BAA67AE00ED9BF9 /* icons.ai in Resources */,
-				56E2113F0BAA6EDE00ED9BF9 /* IconFailed.icns in Resources */,
-				56E211400BAA6EDE00ED9BF9 /* IconFinished.icns in Resources */,
-				56E211410BAA6EDE00ED9BF9 /* IconLoading.icns in Resources */,
-				56E211420BAA6EDE00ED9BF9 /* IconPending.icns in Resources */,
-				56E211430BAA6EDE00ED9BF9 /* IconRetrieved.icns in Resources */,
-				56E211440BAA6EDE00ED9BF9 /* IconRetrieving.icns in Resources */,
-				56E211450BAA6EDE00ED9BF9 /* IconRunning.icns in Resources */,
 				563FE6360BB49127007DA165 /* TODO.markdown in Resources */,
 				569499CA0BE599DA005C986E /* XgridFuseApp.icns in Resources */,
 				569499DB0BE59C7F005C986E /* macfuse-objc-license.txt in Resources */,
