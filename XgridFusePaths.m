@@ -49,7 +49,7 @@
 	
 	//task = simply the number
 	NSArray *allTasks = [[job valueForKey:@"tasks"] allObjects];
-	int index = [[allTasks valueForKeyPath:@"@unionOfObjects.name"] indexOfObject:[components objectAtIndex:3]];
+	int index = [[allTasks valueForKeyPath:@"@unionOfObjects.fuseFilename"] indexOfObject:[components objectAtIndex:3]];
 	if ( index == NSNotFound )
 		return nil;
 	else
@@ -116,7 +116,7 @@
 			if ( parentJob != nil ) {
 				if ( [parentJob isRetrieved] == NO && [parentJob isRetrievingResults] == NO )
 					[parentJob performSelectorOnMainThread:@selector(retrieveResults) withObject:nil waitUntilDone:NO];
-				fileList = [[[parentJob valueForKeyPath:@"tasks"] allObjects] valueForKeyPath:@"@unionOfObjects.name"];
+				fileList = [[[parentJob valueForKeyPath:@"tasks"] allObjects] valueForKeyPath:@"@unionOfObjects.fuseFilename"];
 			}
 		}
 		
@@ -271,14 +271,31 @@
 {
 	NSMutableString *cleanName = [NSMutableString stringWithString:[self valueForKey:@"name"]];
 	[cleanName replaceOccurrencesOfString:@"/" withString:@"-" options:NSLiteralSearch range:NSMakeRange(0, [cleanName length])];
-	NSString *marker;
+	NSString *marker = @"-";
+	//don't do that anymore, this is annoying when going through the jobs, it keeps jumping in the Finder
+	//instead, do it on the tasks
+	/*
 	if ( [self isRetrieved] == YES )
 		marker = @"+";
 	else if ( [self isRetrievingResults] == YES )
 		marker = @"*";
 	else
 		marker = @"-";
+	*/
 	return [NSString stringWithFormat:@"-%@%@ %@", [self valueForKey:@"identifier"], marker, cleanName] ;
+}
+@end
+
+@implementation NSManagedObject (GEZTaskFusePaths)
+- (NSString *)fuseFilename
+{
+	//bad bad hack
+	if ( [self class] != NSClassFromString(@"GEZTask") )
+		 return @"not a task";
+	NSString *marker = @"-loading...";
+	if ( [[self valueForKey:@"job"] isRetrieved] == YES )
+		 marker = @"";
+	return [NSString stringWithFormat:@"%@%@", [self valueForKey:@"name"], marker] ;
 }
 
 @end
