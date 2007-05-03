@@ -3,22 +3,18 @@
 
 ## Xgrid Fuse version 0.2.0
 
-System Requirements:
+* System Requirements:
 
-* Mac OS X 10.4.9 or later
-* MacFuse Core 0.2.4 or later
+	* Mac OS X 10.4.9 or later
+	* MacFuse Core 0.2.4 or later
 
-Xgrid Fuse 0.2.0 is a universal binary, and will run natively on both Intel and PowerPC processors.
+* Xgrid Fuse 0.2.0 is a universal binary, and will run natively on both Intel and PowerPC processors.
 
-Created by Charles Parnot.
+* Created by Charles Parnot. Copyright Charles Parnot 2007. All rights reserved.
 
-Copyright Charles Parnot 2007. All rights reserved.
+* Contact by email (fill the blanks): charles parnot gmail com
 
-Contact by email (fill the blanks):
-
-charles parnot gmail com
-
-Read more [on the web](http://cmgm.stanford.edu/~cparnot/xgrid-stanford)
+* Read more [on the web](http://cmgm.stanford.edu/~cparnot/xgrid-stanford)
 
 
 How to use
@@ -102,6 +98,7 @@ version 0.2.0
 * Task names now displays a "loading..." suffix while results are loadin
 * Separate framework for MacFuse-ObjC
 * Instructing GridEZ to use an in-memory coredata store, via GEZStoreType entry in the Info.plist file
+* A file 'Read Me.html' appears on the volume that mounts to provide direct link to help file
 
 version 0.1.0
 (April 2007)
