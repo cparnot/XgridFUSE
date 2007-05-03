@@ -17,9 +17,9 @@
 		breakpoints = (
 			563DBD4A0BAF1801004A1338 /* FUSEFileSystem.m:557 */,
 			56F432B10BAE68DB0004CB67 /* FUSEFileSystem.m:621 */,
-			56DAC2BD0BAE5D780095841E /* XgridFuseFileSystem.m:422 */,
-			563DBD2E0BAE6D33004A1338 /* XgridFuseFileSystem.m:454 */,
-			56CDAE4A0BAF26F600686424 /* XgridFuseFileSystem.m:437 */,
+			56DAC2BD0BAE5D780095841E /* XgridFuseFileSystem.m:460 */,
+			563DBD2E0BAE6D33004A1338 /* XgridFuseFileSystem.m:492 */,
+			56CDAE4A0BAF26F600686424 /* XgridFuseFileSystem.m:475 */,
 			56CDAE890BAF2BA100686424 /* FUSEFileSystem.m:794 */,
 			56CDAE8B0BAF2BA300686424 /* FUSEFileSystem.m:805 */,
 			56CDAE8D0BAF2BA600686424 /* FUSEFileSystem.m:815 */,
@@ -44,8 +44,8 @@
 			56CDAEB30BAF2BD800686424 /* FUSEFileSystem.m:1123 */,
 			56CDAEB70BAF2BE200686424 /* FUSEFileSystem.m:1185 */,
 			56DF23640BB1F620006A0B66 /* TestXgridFusePaths.m:23 */,
-			56DEF0700BA79396000EA01E /* XgridFuseFileSystem.m:226 */,
-			56CDAEDC0BAF2EC500686424 /* XgridFuseFileSystem.m:246 */,
+			56DEF0700BA79396000EA01E /* XgridFuseFileSystem.m:239 */,
+			56CDAEDC0BAF2EC500686424 /* XgridFuseFileSystem.m:266 */,
 		);
 		breakpointsGroup = 5624A5DD0BA72F05005AE1E6 /* XCBreakpointsBucket */;
 		codeSenseManager = 5624A5950BA72E50005AE1E6 /* Code sense */;
@@ -372,6 +372,29 @@
 			56A503380BE9595D006A5B3F /* PBXTextBookmark */ = 56A503380BE9595D006A5B3F /* PBXTextBookmark */;
 			56A503390BE9595D006A5B3F /* PBXTextBookmark */ = 56A503390BE9595D006A5B3F /* PBXTextBookmark */;
 			56A5033A0BE9595D006A5B3F /* PBXTextBookmark */ = 56A5033A0BE9595D006A5B3F /* PBXTextBookmark */;
+			56A503660BE95D4E006A5B3F /* PBXTextBookmark */ = 56A503660BE95D4E006A5B3F /* PBXTextBookmark */;
+			56A503670BE95D4E006A5B3F /* PBXTextBookmark */ = 56A503670BE95D4E006A5B3F /* PBXTextBookmark */;
+			56A5039B0BE95EE1006A5B3F /* PBXTextBookmark */ = 56A5039B0BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A5039C0BE95EE1006A5B3F /* PBXTextBookmark */ = 56A5039C0BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A5039D0BE95EE1006A5B3F /* PBXTextBookmark */ = 56A5039D0BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A5039E0BE95EE1006A5B3F /* PBXTextBookmark */ = 56A5039E0BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A5039F0BE95EE1006A5B3F /* PBXTextBookmark */ = 56A5039F0BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503A00BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503A00BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503A10BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503A10BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503A20BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503A20BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503A30BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503A30BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503A40BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503A40BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503A50BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503A50BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503A60BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503A60BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503A70BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503A70BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503A80BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503A80BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503A90BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503A90BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503AA0BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503AA0BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503AB0BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503AB0BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503AC0BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503AC0BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503AD0BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503AD0BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503AE0BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503AE0BE95EE1006A5B3F /* PBXTextBookmark */;
+			56A503AF0BE95EE1006A5B3F /* PBXTextBookmark */ = 56A503AF0BE95EE1006A5B3F /* PBXTextBookmark */;
 			56A5FE910BE80C60006A5B3F = 56A5FE910BE80C60006A5B3F /* PBXTextBookmark */;
 			56A5FE920BE80C60006A5B3F = 56A5FE920BE80C60006A5B3F /* PBXTextBookmark */;
 			56A5FE930BE80C60006A5B3F = 56A5FE930BE80C60006A5B3F /* PBXTextBookmark */;
@@ -448,16 +471,16 @@
 	};
 	29B97316FDCFA39411CA2CEA /* main.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {803, 451}}";
+			sepNavIntBoundsRect = "{{0, 0}, {796, 689}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRect = "{{0, 0}, {803, 451}}";
+			sepNavVisRect = "{{0, 0}, {796, 689}}";
 		};
 	};
 	32CA4F630368D1EE00C91783 /* Xgrid_FUSE_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {943, 424}}";
+			sepNavIntBoundsRect = "{{0, 0}, {796, 689}}";
 			sepNavSelRange = "{175, 0}";
-			sepNavVisRect = "{{0, 0}, {943, 424}}";
+			sepNavVisRect = "{{0, 0}, {796, 689}}";
 		};
 	};
 	5624A4F80BA72E43005AE1E6 /* Xgrid FUSE */ = {
@@ -609,12 +632,12 @@
 		isa = XCBreakpointsBucket;
 		name = "Project Breakpoints";
 		objects = (
-			56DEF0700BA79396000EA01E /* XgridFuseFileSystem.m:226 */,
-			56DAC2BD0BAE5D780095841E /* XgridFuseFileSystem.m:422 */,
+			56DEF0700BA79396000EA01E /* XgridFuseFileSystem.m:239 */,
+			56DAC2BD0BAE5D780095841E /* XgridFuseFileSystem.m:460 */,
 			56F432B10BAE68DB0004CB67 /* FUSEFileSystem.m:621 */,
-			563DBD2E0BAE6D33004A1338 /* XgridFuseFileSystem.m:454 */,
+			563DBD2E0BAE6D33004A1338 /* XgridFuseFileSystem.m:492 */,
 			563DBD4A0BAF1801004A1338 /* FUSEFileSystem.m:557 */,
-			56CDAE4A0BAF26F600686424 /* XgridFuseFileSystem.m:437 */,
+			56CDAE4A0BAF26F600686424 /* XgridFuseFileSystem.m:475 */,
 			56CDAE890BAF2BA100686424 /* FUSEFileSystem.m:794 */,
 			56CDAE8B0BAF2BA300686424 /* FUSEFileSystem.m:805 */,
 			56CDAE8D0BAF2BA600686424 /* FUSEFileSystem.m:815 */,
@@ -638,7 +661,7 @@
 			56CDAEB10BAF2BD200686424 /* FUSEFileSystem.m:1084 */,
 			56CDAEB30BAF2BD800686424 /* FUSEFileSystem.m:1123 */,
 			56CDAEB70BAF2BE200686424 /* FUSEFileSystem.m:1185 */,
-			56CDAEDC0BAF2EC500686424 /* XgridFuseFileSystem.m:246 */,
+			56CDAEDC0BAF2EC500686424 /* XgridFuseFileSystem.m:266 */,
 			56DF23640BB1F620006A0B66 /* TestXgridFusePaths.m:23 */,
 		);
 	};
@@ -786,16 +809,16 @@
 	};
 	5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {826, 574}}";
-			sepNavSelRange = "{191, 0}";
-			sepNavVisRect = "{{0, 0}, {826, 477}}";
+			sepNavIntBoundsRect = "{{0, 0}, {796, 714}}";
+			sepNavSelRange = "{862, 0}";
+			sepNavVisRect = "{{0, 0}, {796, 689}}";
 		};
 	};
 	5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {796, 6776}}";
-			sepNavSelRange = "{6259, 0}";
-			sepNavVisRect = "{{0, 2653}, {796, 689}}";
+			sepNavIntBoundsRect = "{{0, 0}, {796, 7364}}";
+			sepNavSelRange = "{862, 0}";
+			sepNavVisRect = "{{0, 0}, {796, 689}}";
 			sepNavWindowFrame = "{{15, 355}, {439, 472}}";
 		};
 	};
@@ -836,7 +859,7 @@
 		vrLen = 258;
 		vrLoc = 0;
 	};
-	563DBD2E0BAE6D33004A1338 /* XgridFuseFileSystem.m:454 */ = {
+	563DBD2E0BAE6D33004A1338 /* XgridFuseFileSystem.m:492 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -846,7 +869,7 @@
 		fileReference = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		functionName = "-releaseFileAtPath:handle:";
 		hitCount = 1;
-		lineNumber = 454;
+		lineNumber = 492;
 		location = "Xgrid FUSE";
 		modificationTime = 196412040.784046;
 		state = 1;
@@ -878,7 +901,7 @@
 		fRef = 56596A7A0BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.m */;
 		name = "NSInvocationXgridFuseCategory.m: 19";
 		rLen = 0;
-		rLoc = 545;
+		rLoc = 1274;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 0;
@@ -888,7 +911,7 @@
 		fRef = 56596A790BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.h */;
 		name = "NSInvocationXgridFuseCategory.h: 11";
 		rLen = 0;
-		rLoc = 381;
+		rLoc = 1083;
 		rType = 0;
 		vrLen = 823;
 		vrLoc = 0;
@@ -992,7 +1015,7 @@
 		fRef = 56DEF0B10BA79FF8000EA01E /* XgridFusePaths.h */;
 		name = "- (BOOL)fileExistsAtPath:(NSString *)path isDirectory:(BOOL *)isDirectory;";
 		rLen = 75;
-		rLoc = 1209;
+		rLoc = 1920;
 		rType = 0;
 		vrLen = 1186;
 		vrLoc = 236;
@@ -1091,16 +1114,16 @@
 	};
 	56596A790BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {824, 449}}";
-			sepNavSelRange = "{381, 0}";
-			sepNavVisRect = "{{0, 0}, {824, 449}}";
+			sepNavIntBoundsRect = "{{0, 0}, {796, 689}}";
+			sepNavSelRange = "{873, 15}";
+			sepNavVisRect = "{{0, 0}, {796, 689}}";
 		};
 	};
 	56596A7A0BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {824, 602}}";
-			sepNavSelRange = "{545, 0}";
-			sepNavVisRect = "{{0, 0}, {824, 449}}";
+			sepNavIntBoundsRect = "{{0, 0}, {796, 798}}";
+			sepNavSelRange = "{885, 0}";
+			sepNavVisRect = "{{0, 63}, {796, 477}}";
 		};
 	};
 	56596ABA0BB0783600DF9B72 /* PBXTextBookmark */ = {
@@ -1108,7 +1131,7 @@
 		fRef = 56596A790BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.h */;
 		name = "NSInvocationOnMainThread.h: 13";
 		rLen = 0;
-		rLoc = 817;
+		rLoc = 1519;
 		rType = 0;
 		vrLen = 241;
 		vrLoc = 0;
@@ -1118,7 +1141,7 @@
 		fRef = 56596A7A0BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.m */;
 		name = "NSInvocationOnMainThread.m: 13";
 		rLen = 0;
-		rLoc = 548;
+		rLoc = 1277;
 		rType = 0;
 		vrLen = 480;
 		vrLoc = 0;
@@ -1128,7 +1151,7 @@
 		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		name = fileAttributesAtPath;
 		rLen = 20;
-		rLoc = 7892;
+		rLoc = 8896;
 		rType = 0;
 		vrLen = 1608;
 		vrLoc = 7458;
@@ -1138,7 +1161,7 @@
 		fRef = 56DEF0B20BA79FF8000EA01E /* XgridFusePaths.m */;
 		name = YES;
 		rLen = 3;
-		rLoc = 4761;
+		rLoc = 5472;
 		rType = 0;
 		vrLen = 953;
 		vrLoc = 4269;
@@ -1148,7 +1171,7 @@
 		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		name = "XgridFuseFileSystem.m: 218";
 		rLen = 0;
-		rLoc = 6293;
+		rLoc = 7166;
 		rType = 0;
 		vrLen = 1707;
 		vrLoc = 5620;
@@ -1167,9 +1190,9 @@
 	};
 	56949A070BE59E1A005C986E /* README.markdown */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {796, 1876}}";
-			sepNavSelRange = "{167, 0}";
-			sepNavVisRect = "{{0, 0}, {796, 477}}";
+			sepNavIntBoundsRect = "{{0, 0}, {796, 1932}}";
+			sepNavSelRange = "{6279, 0}";
+			sepNavVisRect = "{{0, 0}, {796, 689}}";
 			sepNavWindowFrame = "{{38, 27}, {915, 779}}";
 		};
 	};
@@ -1288,7 +1311,7 @@
 		fRef = 5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */;
 		name = "XgridFuseFileSystem.h: 9";
 		rLen = 0;
-		rLoc = 191;
+		rLoc = 902;
 		rType = 0;
 		vrLen = 840;
 		vrLoc = 0;
@@ -1298,7 +1321,7 @@
 		fRef = 5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */;
 		name = "XgridFuseFileSystem.h: 9";
 		rLen = 0;
-		rLoc = 191;
+		rLoc = 902;
 		rType = 0;
 		vrLen = 840;
 		vrLoc = 0;
@@ -1308,7 +1331,7 @@
 		fRef = 5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */;
 		name = "XgridFuseFileSystem.h: 9";
 		rLen = 0;
-		rLoc = 191;
+		rLoc = 902;
 		rType = 0;
 		vrLen = 840;
 		vrLoc = 0;
@@ -1318,7 +1341,7 @@
 		fRef = 5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */;
 		name = "XgridFuseFileSystem.h: 9";
 		rLen = 0;
-		rLoc = 191;
+		rLoc = 902;
 		rType = 0;
 		vrLen = 840;
 		vrLoc = 0;
@@ -1348,7 +1371,7 @@
 		fRef = 5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */;
 		name = "XgridFuseFileSystem.h: 9";
 		rLen = 0;
-		rLoc = 191;
+		rLoc = 902;
 		rType = 0;
 		vrLen = 840;
 		vrLoc = 0;
@@ -1862,7 +1885,7 @@
 		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		name = "XgridFuseFileSystem.m: 218";
 		rLen = 0;
-		rLoc = 6293;
+		rLoc = 7166;
 		rType = 0;
 		vrLen = 1566;
 		vrLoc = 9253;
@@ -1872,7 +1895,7 @@
 		fRef = 56DEF0B20BA79FF8000EA01E /* XgridFusePaths.m */;
 		name = "XgridFusePaths.m: 296";
 		rLen = 0;
-		rLoc = 8454;
+		rLoc = 9165;
 		rType = 0;
 		vrLen = 1085;
 		vrLoc = 7529;
@@ -1922,7 +1945,7 @@
 		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		name = "XgridFuseFileSystem.m: 218";
 		rLen = 0;
-		rLoc = 6293;
+		rLoc = 7166;
 		rType = 0;
 		vrLen = 1566;
 		vrLoc = 9253;
@@ -1932,7 +1955,7 @@
 		fRef = 56DEF0B20BA79FF8000EA01E /* XgridFusePaths.m */;
 		name = "XgridFusePaths.m: 276";
 		rLen = 0;
-		rLoc = 7984;
+		rLoc = 8695;
 		rType = 0;
 		vrLen = 1464;
 		vrLoc = 6651;
@@ -1942,7 +1965,7 @@
 		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		name = "XgridFuseFileSystem.m: 218";
 		rLen = 0;
-		rLoc = 6293;
+		rLoc = 7166;
 		rType = 0;
 		vrLen = 1566;
 		vrLoc = 9253;
@@ -1952,7 +1975,7 @@
 		fRef = 56DEF0B20BA79FF8000EA01E /* XgridFusePaths.m */;
 		name = "XgridFusePaths.m: 296";
 		rLen = 0;
-		rLoc = 8454;
+		rLoc = 9165;
 		rType = 0;
 		vrLen = 1085;
 		vrLoc = 7529;
@@ -2052,7 +2075,7 @@
 		fRef = 56949A070BE59E1A005C986E /* README.markdown */;
 		name = "README.markdown: 109";
 		rLen = 0;
-		rLoc = 6264;
+		rLoc = 6358;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 0;
@@ -2062,7 +2085,7 @@
 		fRef = 56949A070BE59E1A005C986E /* README.markdown */;
 		name = "README.markdown: 109";
 		rLen = 0;
-		rLoc = 6264;
+		rLoc = 6358;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 0;
@@ -2072,7 +2095,7 @@
 		fRef = 56949A070BE59E1A005C986E /* README.markdown */;
 		name = "README.markdown: 109";
 		rLen = 0;
-		rLoc = 6264;
+		rLoc = 6358;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 0;
@@ -2082,7 +2105,7 @@
 		fRef = 56949A070BE59E1A005C986E /* README.markdown */;
 		name = "README.markdown: 109";
 		rLen = 0;
-		rLoc = 6264;
+		rLoc = 6358;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 0;
@@ -2106,7 +2129,7 @@
 		fRef = 56949A070BE59E1A005C986E /* README.markdown */;
 		name = "README.markdown: 109";
 		rLen = 0;
-		rLoc = 6264;
+		rLoc = 6358;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 0;
@@ -2141,7 +2164,7 @@
 		fRef = 56949A070BE59E1A005C986E /* README.markdown */;
 		name = "README.markdown: 109";
 		rLen = 0;
-		rLoc = 6264;
+		rLoc = 6358;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 0;
@@ -2341,7 +2364,7 @@
 		fRef = 56949A070BE59E1A005C986E /* README.markdown */;
 		name = "README.markdown: 109";
 		rLen = 0;
-		rLoc = 6264;
+		rLoc = 6358;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 0;
@@ -2401,7 +2424,7 @@
 		fRef = 56949A070BE59E1A005C986E /* README.markdown */;
 		name = "README.markdown: 109";
 		rLen = 0;
-		rLoc = 6264;
+		rLoc = 6358;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 0;
@@ -2912,7 +2935,7 @@
 		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		name = "XgridFuseFileSystem.m: 218";
 		rLen = 0;
-		rLoc = 6293;
+		rLoc = 7166;
 		rType = 0;
 		vrLen = 1566;
 		vrLoc = 9253;
@@ -2932,17 +2955,250 @@
 		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		name = "XgridFuseFileSystem.m: 220";
 		rLen = 0;
-		rLoc = 6259;
+		rLoc = 7017;
 		rType = 0;
 		vrLen = 1962;
 		vrLoc = 4865;
+	};
+	56A503610BE95D2F006A5B3F /* XgridFuseFileSystem.m */ = {
+		isa = PBXFileReference;
+		name = XgridFuseFileSystem.m;
+		path = /Users/charles/Docs/Development/cocoa_dev/XgridFUSE/XgridFuseFileSystem.m;
+		sourceTree = "<absolute>";
+	};
+	56A503660BE95D4E006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 56A503610BE95D2F006A5B3F /* XgridFuseFileSystem.m */;
+		rLen = 1;
+		rLoc = 311;
+		rType = 1;
+	};
+	56A503670BE95D4E006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
+		name = "XgridFuseFileSystem.m: 301";
+		rLen = 0;
+		rLoc = 9323;
+		rType = 0;
+		vrLen = 1378;
+		vrLoc = 8166;
+	};
+	56A5039B0BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 56949A070BE59E1A005C986E /* README.markdown */;
+		name = "README.markdown: 105";
+		rLen = 0;
+		rLoc = 6279;
+		rType = 0;
+		vrLen = 1976;
+		vrLoc = 0;
+	};
+	56A5039C0BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 56DEF0B10BA79FF8000EA01E /* XgridFusePaths.h */;
+		name = "XgridFusePaths.h: 15";
+		rLen = 0;
+		rLoc = 857;
+		rType = 0;
+		vrLen = 1996;
+		vrLoc = 0;
+	};
+	56A5039D0BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 56DEF0B20BA79FF8000EA01E /* XgridFusePaths.m */;
+		name = "XgridFusePaths.m: 15";
+		rLen = 0;
+		rLoc = 857;
+		rType = 0;
+		vrLen = 1801;
+		vrLoc = 0;
+	};
+	56A5039E0BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */;
+		name = "XgridFuseFileSystem.h: 15";
+		rLen = 0;
+		rLoc = 862;
+		rType = 0;
+		vrLen = 1734;
+		vrLoc = 0;
+	};
+	56A5039F0BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
+		name = "XgridFuseFileSystem.m: 15";
+		rLen = 0;
+		rLoc = 862;
+		rType = 0;
+		vrLen = 1519;
+		vrLoc = 0;
+	};
+	56A503A00BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 258;
+		vrLoc = 0;
+	};
+	56A503A10BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* Xgrid_FUSE_Prefix.pch */;
+		name = "Xgrid_FUSE_Prefix.pch: 8";
+		rLen = 0;
+		rLoc = 175;
+		rType = 0;
+		vrLen = 178;
+		vrLoc = 0;
+	};
+	56A503A20BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 56596A790BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.h */;
+		name = "/* NOT USED */";
+		rLen = 15;
+		rLoc = 873;
+		rType = 0;
+		vrLen = 1525;
+		vrLoc = 0;
+	};
+	56A503A30BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 56596A7A0BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.m */;
+		name = "NSInvocationXgridFuseCategory.m: 19";
+		rLen = 0;
+		rLoc = 885;
+		rType = 0;
+		vrLen = 1329;
+		vrLoc = 52;
+	};
+	56A503A40BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
+		name = "XgridFuseFileSystem.m: 291";
+		rLen = 0;
+		rLoc = 9010;
+		rType = 0;
+		vrLen = 1378;
+		vrLoc = 8166;
+	};
+	56A503A50BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 56949A070BE59E1A005C986E /* README.markdown */;
+		name = "README.markdown: 105";
+		rLen = 0;
+		rLoc = 6279;
+		rType = 0;
+		vrLen = 1976;
+		vrLoc = 0;
+	};
+	56A503A60BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 56596A790BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.h */;
+		name = "NSInvocationXgridFuseCategory.h: 6";
+		rLen = 773;
+		rLoc = 99;
+		rType = 0;
+		vrLen = 1534;
+		vrLoc = 0;
+	};
+	56A503A70BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 56596A7A0BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.m */;
+		name = "NSInvocationXgridFuseCategory.m: 15";
+		rLen = 0;
+		rLoc = 885;
+		rType = 0;
+		vrLen = 1875;
+		vrLoc = 0;
+	};
+	56A503A80BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 56DEF0B10BA79FF8000EA01E /* XgridFusePaths.h */;
+		name = "XgridFusePaths.h: 15";
+		rLen = 0;
+		rLoc = 857;
+		rType = 0;
+		vrLen = 1996;
+		vrLoc = 0;
+	};
+	56A503A90BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 56DEF0B20BA79FF8000EA01E /* XgridFusePaths.m */;
+		name = "XgridFusePaths.m: 15";
+		rLen = 0;
+		rLoc = 857;
+		rType = 0;
+		vrLen = 1801;
+		vrLoc = 0;
+	};
+	56A503AA0BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */;
+		name = "XgridFuseFileSystem.h: 15";
+		rLen = 0;
+		rLoc = 862;
+		rType = 0;
+		vrLen = 1734;
+		vrLoc = 0;
+	};
+	56A503AB0BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
+		name = "XgridFuseFileSystem.m: 15";
+		rLen = 0;
+		rLoc = 862;
+		rType = 0;
+		vrLen = 1519;
+		vrLoc = 0;
+	};
+	56A503AC0BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 258;
+		vrLoc = 0;
+	};
+	56A503AD0BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* Xgrid_FUSE_Prefix.pch */;
+		name = "Xgrid_FUSE_Prefix.pch: 8";
+		rLen = 0;
+		rLoc = 175;
+		rType = 0;
+		vrLen = 178;
+		vrLoc = 0;
+	};
+	56A503AE0BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 56596A790BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.h */;
+		name = "/* NOT USED */";
+		rLen = 15;
+		rLoc = 873;
+		rType = 0;
+		vrLen = 1525;
+		vrLoc = 0;
+	};
+	56A503AF0BE95EE1006A5B3F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 56596A7A0BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.m */;
+		name = "NSInvocationXgridFuseCategory.m: 19";
+		rLen = 0;
+		rLoc = 885;
+		rType = 0;
+		vrLen = 1329;
+		vrLoc = 52;
 	};
 	56A5FE910BE80C60006A5B3F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 56DEF0B20BA79FF8000EA01E /* XgridFusePaths.m */;
 		name = "XgridFusePaths.m: 248";
 		rLen = 0;
-		rLoc = 7096;
+		rLoc = 7807;
 		rType = 0;
 		vrLen = 1340;
 		vrLoc = 6736;
@@ -3255,7 +3511,7 @@
 		vrLen = 1249;
 		vrLoc = 0;
 	};
-	56CDAE4A0BAF26F600686424 /* XgridFuseFileSystem.m:437 */ = {
+	56CDAE4A0BAF26F600686424 /* XgridFuseFileSystem.m:475 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -3265,7 +3521,7 @@
 		fileReference = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		functionName = "-openFileAtPath:mode:";
 		hitCount = 1;
-		lineNumber = 437;
+		lineNumber = 475;
 		location = "Xgrid FUSE";
 		modificationTime = 196412040.784054;
 		state = 1;
@@ -3705,7 +3961,7 @@
 		speakMessage = 0;
 		useDebuggerSideImplementation = 0;
 	};
-	56CDAEDC0BAF2EC500686424 /* XgridFuseFileSystem.m:246 */ = {
+	56CDAEDC0BAF2EC500686424 /* XgridFuseFileSystem.m:266 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -3715,7 +3971,7 @@
 		fileReference = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		functionName = "-fileExistsAtPath:isDirectory:";
 		hitCount = 1;
-		lineNumber = 246;
+		lineNumber = 266;
 		location = "Xgrid FUSE";
 		modificationTime = 196412040.784343;
 		state = 1;
@@ -3725,7 +3981,7 @@
 		fRef = 5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */;
 		name = "XgridFuseFileSystem.h: modificationDate";
 		rLen = 0;
-		rLoc = 296;
+		rLoc = 1007;
 		rType = 0;
 		vrLen = 648;
 		vrLoc = 0;
@@ -3750,7 +4006,7 @@
 		vrLen = 1409;
 		vrLoc = 624;
 	};
-	56DAC2BD0BAE5D780095841E /* XgridFuseFileSystem.m:422 */ = {
+	56DAC2BD0BAE5D780095841E /* XgridFuseFileSystem.m:460 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -3760,7 +4016,7 @@
 		fileReference = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		functionName = "-writeFileAtPath:handle:buffer:size:offset:";
 		hitCount = 1;
-		lineNumber = 422;
+		lineNumber = 460;
 		location = XgridFuseFileSystem.ob;
 		modificationTime = 196412040.784038;
 		state = 2;
@@ -3770,7 +4026,7 @@
 		fRef = 5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */;
 		name = "XgridFuseFileSystem.h: 21";
 		rLen = 0;
-		rLoc = 464;
+		rLoc = 1175;
 		rType = 0;
 		vrLen = 1010;
 		vrLoc = 0;
@@ -3816,7 +4072,7 @@
 		path = /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSSet.h;
 		sourceTree = "<absolute>";
 	};
-	56DEF0700BA79396000EA01E /* XgridFuseFileSystem.m:226 */ = {
+	56DEF0700BA79396000EA01E /* XgridFuseFileSystem.m:239 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -3826,7 +4082,7 @@
 		fileReference = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		functionName = "-directoryContentsAtPath:";
 		hitCount = 1;
-		lineNumber = 226;
+		lineNumber = 239;
 		location = XgridFuseFileSystem.ob;
 		modificationTime = 196412040.784332;
 		state = 2;
@@ -3860,16 +4116,16 @@
 	};
 	56DEF0B10BA79FF8000EA01E /* XgridFusePaths.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {824, 644}}";
-			sepNavSelRange = "{1209, 75}";
-			sepNavVisRect = "{{0, 167}, {824, 449}}";
+			sepNavIntBoundsRect = "{{0, 0}, {796, 784}}";
+			sepNavSelRange = "{857, 0}";
+			sepNavVisRect = "{{0, 0}, {796, 689}}";
 		};
 	};
 	56DEF0B20BA79FF8000EA01E /* XgridFusePaths.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {796, 4032}}";
-			sepNavSelRange = "{7968, 0}";
-			sepNavVisRect = "{{0, 3287}, {796, 689}}";
+			sepNavIntBoundsRect = "{{0, 0}, {796, 4354}}";
+			sepNavSelRange = "{857, 0}";
+			sepNavVisRect = "{{0, 0}, {796, 689}}";
 		};
 	};
 	56DEF1D60BA7B75A000EA01E /* PBXTextBookmark */ = {

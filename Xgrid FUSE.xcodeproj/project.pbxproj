@@ -13,7 +13,6 @@
 		5624A6690BA7753A005AE1E6 /* XgridFuseFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */; };
 		563FE6360BB49127007DA165 /* TODO.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 563FE6350BB49127007DA165 /* TODO.markdown */; };
 		565505AF0BA7D20F00288B0F /* XgridFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565505AE0BA7D20F00288B0F /* XgridFoundation.framework */; };
-		56596A7C0BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 56596A7A0BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.m */; };
 		569499CA0BE599DA005C986E /* XgridFuseApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 569499C90BE599DA005C986E /* XgridFuseApp.icns */; };
 		569499DB0BE59C7F005C986E /* macfuse-objc-license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 569499DA0BE59C7F005C986E /* macfuse-objc-license.txt */; };
 		56949A080BE59E1A005C986E /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 56949A070BE59E1A005C986E /* README.markdown */; };
@@ -413,7 +412,6 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				5624A6690BA7753A005AE1E6 /* XgridFuseFileSystem.m in Sources */,
 				56DEF0B30BA79FF8000EA01E /* XgridFusePaths.m in Sources */,
-				56596A7C0BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
