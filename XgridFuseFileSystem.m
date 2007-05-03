@@ -11,6 +11,12 @@
 #import <CoreServices/CoreServices.h>
 #import "NSInvocationXgridFuseCategory.h"
 
+//path to README.html file that will be in the root
+NSString *ReadMeHtmlPath ( )
+{
+	return [[NSBundle mainBundle] pathForResource:@"README" ofType:@"html"];
+}
+
 @implementation XgridFuseFileSystem
 
 - (void)dealloc
@@ -215,6 +221,10 @@
 	//	directoryContents = [NSArray arrayWithArray:moreEntries];
 	//}
 	
+	//special case = 'README' file in root
+	if ( [path isEqualToString:@"/"] )
+		directoryContents = [directoryContents arrayByAddingObject:@"Read Me.html"];
+
 	if ( directoryContents == nil )
 		return [NSArray array];
 	else
@@ -233,6 +243,13 @@
 //		return YES;
 //	}
 //	
+
+	//special case = 'README' file in root
+	if ( [path isEqualToString:@"/Read Me.html"] ) {
+		*isDirectory = YES;
+		return YES;
+	}
+
 	//get information contributed by Xgrid components
 	return [mountedServer fileExistsAtPath:path isDirectory:isDirectory];
 
@@ -278,6 +295,16 @@
 	//xgrid attributes
 	NSDictionary *xgridAttributes = [mountedServer fileAttributesAtPath:path];
 	if ( xgridAttributes == nil ) {
+
+		//special case = 'README' file in root
+		if ( [path isEqualToString:@"/Read Me.html"] ) {
+			NSMutableDictionary *finalAttributes = [NSMutableDictionary dictionaryWithDictionary:[[NSFileManager defaultManager] fileAttributesAtPath:ReadMeHtmlPath() traverseLink:NO]];
+			if ( finalAttributes == nil )
+				finalAttributes = [NSMutableDictionary dictionary];
+			[finalAttributes setObject:NSFileTypeSymbolicLink forKey:NSFileType];
+			return [NSDictionary dictionaryWithDictionary:finalAttributes];
+		}
+
 		NSLog(@"Unexpected call:\n<%@:%p> %s\npath = %@", [self class],self,_cmd, path);
 		return nil;
 	}
@@ -321,6 +348,14 @@
 		//,NSFileGroupOwnerAccountID,
 		//nil];
 
+}
+
+- (NSString *)pathContentOfSymbolicLinkAtPath:(NSString *)path
+{
+	if ( ![path isEqualToString:@"/Read Me.html"] )
+		return @"/dev/null";
+
+	return ReadMeHtmlPath();
 }
 
 - (NSString *)iconFileForPath:(NSString *)path
