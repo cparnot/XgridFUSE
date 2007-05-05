@@ -90,7 +90,7 @@
 		569499C90BE599DA005C986E /* XgridFuseApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = XgridFuseApp.icns; sourceTree = "<group>"; };
 		569499DA0BE59C7F005C986E /* macfuse-objc-license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "macfuse-objc-license.txt"; sourceTree = "<group>"; };
 		56949A070BE59E1A005C986E /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
-		56A5006C0BE81AF5006A5B3F /* MacFUSE-ObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MacFUSE-ObjC.framework"; path = "../../../../Xcode/Products/Release/MacFUSE-ObjC.framework"; sourceTree = SOURCE_ROOT; };
+		56A5006C0BE81AF5006A5B3F /* MacFUSE-ObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MacFUSE-ObjC.framework"; path = "/Users/charles/Xcode/Products/Release/MacFUSE-ObjC.framework"; sourceTree = "<absolute>"; };
 		56A500A10BE81D34006A5B3F /* IconFamily-GTResourceFork-licenses.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "IconFamily-GTResourceFork-licenses.txt"; sourceTree = "<group>"; };
 		56A500DD0BE8204A006A5B3F /* GridEZ-license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GridEZ-license.txt"; sourceTree = "<group>"; };
 		56A501500BE8218D006A5B3F /* License-GPL.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "License-GPL.txt"; sourceTree = "<group>"; };
