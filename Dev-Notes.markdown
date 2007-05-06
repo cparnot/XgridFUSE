@@ -3,13 +3,14 @@
 
 * Built using files from macfuse/filesystems-objc/FUSEObjC
 * Framework is embedded (copied) in the final app package, in subdir 'Frameworks', using a 'Copy Files' build phase
-
+* If you downloaded Xgrid FUSE from Xgrid@Stanford, you should also have the application package, that contains the framework already built
 
 # Adding GridEZ.framework
 
 * Download from XGrid@Stanford website
 * Read instructions from download
 * Framework is embedded (copied) in the final app package, in subdir 'Frameworks', using a 'Copy Files' build phase
+* If you downloaded Xgrid FUSE from Xgrid@Stanford, you should also have the application package, that contains the framework already built
 
 
 # Subclassing FUSEFileSystem
@@ -23,6 +24,8 @@
 
 # How does FUSEFileSystem superclass work?
 
+* These are my notes to understand how FUSEFileSystem works
+* See source code in MacFUSE/macfuse-objc
 * respond to applicationDidFinishLaunching:
 	* create an instance of FUSEFileSystem, using the class listed in the info.plist
 	* start fuse if shouldStartFuse returns YES, otherwise nothing
@@ -33,3 +36,4 @@
 # Why only one XgridFS volume?
 
 * The limitation is due to 'struct fuse_operations' that takes a list of functions with very specific format, that won't take the SEL and self parameters of an IMP; thus it is difficult to create a separate struct for each instance of FUSEFileSystem, and populate it with functions that would call back the specific fuse wrapper
+* One workaround would be to launch several instances of Xgrid FUSE

@@ -7,22 +7,53 @@
 # Markdown script buried in Textmate package
 my $markdown_script_path = "/Applications/TextMate.app/Contents/SharedSupport/Support/bin/Markdown.pl";
 
-#path of markdown and html versions of the file
-my $readme_markdown_path = "README.markdown";
-my $readme_html_path = "README.html";
-my $readme_html_template_path = "README-template1.html";
-
 #generate partial html corresponding to the markdown file
-my $readme_html_partial = `$markdown_script_path $readme_markdown_path`;
+my $readme_markdown_path = "README.markdown";
+my $readme_markdown_translated = `$markdown_script_path $readme_markdown_path`;
 
-#the final html is obtained by replacing the portion between the markdown markers in the current html file
-my $readme_html = slurp ( $readme_html_template_path );
-my ( $header , $footer ) = ( $readme_html =~ /^(.*Begin markdown contents -->).*(<!-- End markdown contents.*)$/s );
-$readme_html = "$header\n\n$readme_html_partial\n\n$footer";
-burp ( $readme_html_path, $readme_html );
+
+#used below to extract header and footer in template html files where the markdown-translated html should be inserted
+my $header_footer_regex = "^(.*Begin markdown contents -->).*(<!-- End markdown contents.*)\$";
+
+#replace contents in the appropriate sections of template 1 (for app documentation)
+create_new_file_by_replacing_section_in_file (
+	"README-template1.html", # path of the initial file
+	$header_footer_regex, # regex to identify header and footer to keep in template
+	$readme_markdown_translated, # string to introduce between header and footer
+	"README.html" # path for the final file
+	);
+
+#replace contents in the appropriate sections of template 2 (for web site)
+$readme_markdown_translated =~ s/(readme-.*\.png)/XgridFUSE-readme\/$1/g;
+create_new_file_by_replacing_section_in_file (
+	"README-template2.html", # path of the initial file
+	$header_footer_regex, # regex to identify header and footer to keep in template
+	$readme_markdown_translated, # string to introduce between header and footer
+	"SVN-IGNORE/XgridFUSE-info.html" # path for the final file
+	);
+
 
 exit 0;
-							 
+
+
+sub create_new_file_by_replacing_section_in_file
+{
+	#all arguments
+	my $initial_path = shift;
+	my $header_footer_regex = shift;
+	my $section_string = shift;
+	my $final_path = shift;
+	
+	#replace section in the intial file with $section_string
+	my $initial_string = slurp ( $initial_path );
+	my ( $header , $footer ) = ( $initial_string =~ /$header_footer_regex/s );
+	my $final_string = $header . "\n\n" . $section_string . "\n\n" . $footer;
+	
+	#final_html
+	burp ( $final_path, $final_string);
+	return $final_string;
+}
+
 # usage: slurp $file_path
 # returns: string or array
 sub slurp
@@ -41,7 +72,7 @@ return @lines;
 sub burp
 {
 	my $path = shift;
-	open OUTPUTFILE, ">$path" or die "Could not open file $path for writing:\n$!";
+	open OUTPUTFILE, ">$path" or return; #die "Could not open file $path for writing:\n$!";
 	foreach ( @_ ) { print OUTPUTFILE $_; }
 	close OUTPUTFILE or die "Could not close file $path\n$!";
 }

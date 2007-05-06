@@ -17,26 +17,26 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>0.1.0</string>
+	<string>0.2.0</string>
 	<key>FUSEFileSystemClass</key>
 	<string>XgridFuseFileSystem</string>
+	<key>GEZStoreType</key>
+	<string>InMemory</string>
+	<key>LSUIElement</key>
+	<string>1</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>LSUIElement</key>
-	<string>1</string>
-	<key>GEZStoreType</key>
-	<string>InMemory</string>
 	<key>NSUserDefaults</key>
 	<dict>
-		<key>DebugLogVerboseLevel</key>
-		<string>0</string>
 		<key>DebugIdentifiersNot</key>
 		<array>
 			<string>GEZJob</string>
 			<string>GEZXgridPanelController</string>
 		</array>
+		<key>DebugLogVerboseLevel</key>
+		<string>0</string>
 		<key>FUSEMountName</key>
 		<string>Hello</string>
 		<key>FUSEMountPath</key>
