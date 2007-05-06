@@ -88,6 +88,9 @@ NSString *ReadMeHtmlPath ( )
 
 - (void)serverDidLoad:(NSNotification *)aNotification
 {
+	//no more Bonjour browsing necessary
+	[GEZServer stopBrowsing];
+	
 	if ( mountedServer != nil )
 		return;
 	mountedServer = [[aNotification object] retain];

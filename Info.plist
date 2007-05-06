@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string>XgridFuseApp</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.google.fuse.xgridfuse</string>
+	<string>parnot.charles.xgridfuse</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
