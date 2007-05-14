@@ -32,6 +32,7 @@ NSString *ReadMeHtmlPath ( )
 	[mountedServer release];
 	[creationDate release];
 	[modificationDate release];
+	[mountingDate release];
 
 	/*
 	[jobSubmissionContents release];
@@ -106,13 +107,14 @@ NSString *ReadMeHtmlPath ( )
 	[mountedServer setObservingAllJobs:YES];
 	[self setValue:[NSDate date] forKey:@"modificationDate"];
 	[self setValue:[NSDate date] forKey:@"creationDate"];
+	[self setValue:[NSDate date] forKey:@"mountingDate"];
 	
 	NSEnumerator *e = [[mountedServer valueForKeyPath:@"jobs"] objectEnumerator];
 	GEZJob *oneJob;
 	while ( oneJob = [e nextObject] )
 		[oneJob setDelegate:self];
 	
-	//hide the app
+	//close the connection window
 	[GEZManager hideServerWindow];
 	
 	NSLog(@"mount");
@@ -305,10 +307,16 @@ NSString *ReadMeHtmlPath ( )
 
 - (NSDictionary *)fileAttributesAtPath:(NSString *)path
 {
-	//we do not manage root
+	//special case: root
 	if ( [path isEqualToString:@"/"] )
-		return nil;
-
+		return [NSDictionary dictionaryWithObjectsAndKeys:
+			[NSNumber numberWithInt:0500], NSFilePosixPermissions,
+			[NSNumber numberWithInt:geteuid()], NSFileOwnerAccountID,
+			[NSNumber numberWithInt:getegid()], NSFileGroupOwnerAccountID,
+			mountingDate, NSFileCreationDate,
+			mountingDate, NSFileModificationDate,
+			nil];
+	
 	//TODO: job submission by copying text file into grid or server
 	
 	//xgrid attributes

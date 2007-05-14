@@ -17,9 +17,9 @@
 		breakpoints = (
 			563DBD4A0BAF1801004A1338 /* FUSEFileSystem.m:557 */,
 			56F432B10BAE68DB0004CB67 /* FUSEFileSystem.m:621 */,
-			56DAC2BD0BAE5D780095841E /* XgridFuseFileSystem.m:472 */,
-			563DBD2E0BAE6D33004A1338 /* XgridFuseFileSystem.m:504 */,
-			56CDAE4A0BAF26F600686424 /* XgridFuseFileSystem.m:487 */,
+			56DAC2BD0BAE5D780095841E /* XgridFuseFileSystem.m:480 */,
+			563DBD2E0BAE6D33004A1338 /* XgridFuseFileSystem.m:512 */,
+			56CDAE4A0BAF26F600686424 /* XgridFuseFileSystem.m:495 */,
 			56CDAE890BAF2BA100686424 /* FUSEFileSystem.m:794 */,
 			56CDAE8B0BAF2BA300686424 /* FUSEFileSystem.m:805 */,
 			56CDAE8D0BAF2BA600686424 /* FUSEFileSystem.m:815 */,
@@ -44,8 +44,8 @@
 			56CDAEB30BAF2BD800686424 /* FUSEFileSystem.m:1123 */,
 			56CDAEB70BAF2BE200686424 /* FUSEFileSystem.m:1185 */,
 			56DF23640BB1F620006A0B66 /* TestXgridFusePaths.m:23 */,
-			56DEF0700BA79396000EA01E /* XgridFuseFileSystem.m:251 */,
-			56CDAEDC0BAF2EC500686424 /* XgridFuseFileSystem.m:278 */,
+			56DEF0700BA79396000EA01E /* XgridFuseFileSystem.m:253 */,
+			56CDAEDC0BAF2EC500686424 /* XgridFuseFileSystem.m:280 */,
 		);
 		breakpointsGroup = 5624A5DD0BA72F05005AE1E6 /* XCBreakpointsBucket */;
 		codeSenseManager = 5624A5950BA72E50005AE1E6 /* Code sense */;
@@ -196,6 +196,17 @@
 			5630D6DE0BF9035F001337CB /* PBXTextBookmark */ = 5630D6DE0BF9035F001337CB /* PBXTextBookmark */;
 			5630D6DF0BF9035F001337CB /* PBXTextBookmark */ = 5630D6DF0BF9035F001337CB /* PBXTextBookmark */;
 			5630D6E40BF903D1001337CB /* PBXTextBookmark */ = 5630D6E40BF903D1001337CB /* PBXTextBookmark */;
+			5630D6E70BF90432001337CB /* PBXTextBookmark */ = 5630D6E70BF90432001337CB /* PBXTextBookmark */;
+			5630D6EB0BF90460001337CB /* PBXTextBookmark */ = 5630D6EB0BF90460001337CB /* PBXTextBookmark */;
+			5630D6EE0BF904CD001337CB /* PBXTextBookmark */ = 5630D6EE0BF904CD001337CB /* PBXTextBookmark */;
+			5630D6EF0BF904CD001337CB /* PBXTextBookmark */ = 5630D6EF0BF904CD001337CB /* PBXTextBookmark */;
+			5630D6F00BF904CD001337CB /* PBXTextBookmark */ = 5630D6F00BF904CD001337CB /* PBXTextBookmark */;
+			5630D6F10BF904CD001337CB /* PBXTextBookmark */ = 5630D6F10BF904CD001337CB /* PBXTextBookmark */;
+			5630D6F20BF904CD001337CB /* PBXTextBookmark */ = 5630D6F20BF904CD001337CB /* PBXTextBookmark */;
+			5630D6F30BF904CD001337CB /* PBXTextBookmark */ = 5630D6F30BF904CD001337CB /* PBXTextBookmark */;
+			5630D6FD0BF9056E001337CB /* PBXTextBookmark */ = 5630D6FD0BF9056E001337CB /* PBXTextBookmark */;
+			5630D6FE0BF9056E001337CB /* PBXTextBookmark */ = 5630D6FE0BF9056E001337CB /* PBXTextBookmark */;
+			5630D6FF0BF9056E001337CB /* PBXTextBookmark */ = 5630D6FF0BF9056E001337CB /* PBXTextBookmark */;
 			563FE64A0BB4927A007DA165 = 563FE64A0BB4927A007DA165 /* PBXTextBookmark */;
 			563FE64B0BB4927A007DA165 = 563FE64B0BB4927A007DA165 /* PBXTextBookmark */;
 			5651CC020BB4FE2C00B2384F = 5651CC020BB4FE2C00B2384F /* PBXTextBookmark */;
@@ -366,12 +377,12 @@
 		isa = XCBreakpointsBucket;
 		name = "Project Breakpoints";
 		objects = (
-			56DEF0700BA79396000EA01E /* XgridFuseFileSystem.m:251 */,
-			56DAC2BD0BAE5D780095841E /* XgridFuseFileSystem.m:472 */,
+			56DEF0700BA79396000EA01E /* XgridFuseFileSystem.m:253 */,
+			56DAC2BD0BAE5D780095841E /* XgridFuseFileSystem.m:480 */,
 			56F432B10BAE68DB0004CB67 /* FUSEFileSystem.m:621 */,
-			563DBD2E0BAE6D33004A1338 /* XgridFuseFileSystem.m:504 */,
+			563DBD2E0BAE6D33004A1338 /* XgridFuseFileSystem.m:512 */,
 			563DBD4A0BAF1801004A1338 /* FUSEFileSystem.m:557 */,
-			56CDAE4A0BAF26F600686424 /* XgridFuseFileSystem.m:487 */,
+			56CDAE4A0BAF26F600686424 /* XgridFuseFileSystem.m:495 */,
 			56CDAE890BAF2BA100686424 /* FUSEFileSystem.m:794 */,
 			56CDAE8B0BAF2BA300686424 /* FUSEFileSystem.m:805 */,
 			56CDAE8D0BAF2BA600686424 /* FUSEFileSystem.m:815 */,
@@ -395,7 +406,7 @@
 			56CDAEB10BAF2BD200686424 /* FUSEFileSystem.m:1084 */,
 			56CDAEB30BAF2BD800686424 /* FUSEFileSystem.m:1123 */,
 			56CDAEB70BAF2BE200686424 /* FUSEFileSystem.m:1185 */,
-			56CDAEDC0BAF2EC500686424 /* XgridFuseFileSystem.m:278 */,
+			56CDAEDC0BAF2EC500686424 /* XgridFuseFileSystem.m:280 */,
 			56DF23640BB1F620006A0B66 /* TestXgridFusePaths.m:23 */,
 		);
 	};
@@ -474,16 +485,16 @@
 	};
 	5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {796, 714}}";
-			sepNavSelRange = "{862, 0}";
-			sepNavVisRect = "{{0, 0}, {796, 689}}";
+			sepNavIntBoundsRect = "{{0, 0}, {876, 742}}";
+			sepNavSelRange = "{1056, 0}";
+			sepNavVisRect = "{{0, 24}, {876, 690}}";
 		};
 	};
 	5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {876, 7490}}";
-			sepNavSelRange = "{9329, 0}";
-			sepNavVisRect = "{{0, 3944}, {876, 690}}";
+			sepNavIntBoundsRect = "{{0, 0}, {876, 7602}}";
+			sepNavSelRange = "{3685, 0}";
+			sepNavVisRect = "{{0, 1274}, {876, 690}}";
 			sepNavWindowFrame = "{{15, 355}, {439, 472}}";
 		};
 	};
@@ -563,7 +574,7 @@
 		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		name = fileAttributesAtPath;
 		rLen = 20;
-		rLoc = 9215;
+		rLoc = 9310;
 		rType = 0;
 		vrLen = 1719;
 		vrLoc = 8875;
@@ -580,7 +591,7 @@
 		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		name = fileAttributesAtPath;
 		rLen = 20;
-		rLoc = 9215;
+		rLoc = 9310;
 		rType = 0;
 		vrLen = 1719;
 		vrLoc = 8875;
@@ -610,7 +621,7 @@
 		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		name = fileAttributesAtPath;
 		rLen = 20;
-		rLoc = 9215;
+		rLoc = 9310;
 		rType = 0;
 		vrLen = 1988;
 		vrLoc = 9058;
@@ -630,7 +641,7 @@
 		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		name = "XgridFuseFileSystem.m: 318";
 		rLen = 0;
-		rLoc = 9332;
+		rLoc = 9736;
 		rType = 0;
 		vrLen = 1959;
 		vrLoc = 9112;
@@ -640,12 +651,122 @@
 		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		name = "XgridFuseFileSystem.m: 310";
 		rLen = 0;
-		rLoc = 9329;
+		rLoc = 9732;
 		rType = 0;
 		vrLen = 1646;
 		vrLoc = 8380;
 	};
-	563DBD2E0BAE6D33004A1338 /* XgridFuseFileSystem.m:504 */ = {
+	5630D6E70BF90432001337CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
+		name = "XgridFuseFileSystem.m: 317";
+		rLen = 0;
+		rLoc = 9733;
+		rType = 0;
+		vrLen = 1554;
+		vrLoc = 8380;
+	};
+	5630D6EB0BF90460001337CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
+		name = "XgridFuseFileSystem.m: 308";
+		rLen = 0;
+		rLoc = 9371;
+		rType = 0;
+		vrLen = 2232;
+		vrLoc = 9313;
+	};
+	5630D6EE0BF904CD001337CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
+		name = "XgridFuseFileSystem.m: 315";
+		rLen = 0;
+		rLoc = 9698;
+		rType = 0;
+		vrLen = 1933;
+		vrLoc = 9140;
+	};
+	5630D6EF0BF904CD001337CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */;
+		name = "XgridFuseFileSystem.h: 15";
+		rLen = 0;
+		rLoc = 862;
+		rType = 0;
+		vrLen = 1734;
+		vrLoc = 0;
+	};
+	5630D6F00BF904CD001337CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
+		name = "XgridFuseFileSystem.m: 314";
+		rLen = 0;
+		rLoc = 9661;
+		rType = 0;
+		vrLen = 1935;
+		vrLoc = 9140;
+	};
+	5630D6F10BF904CD001337CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */;
+		name = "XgridFuseFileSystem.h: 15";
+		rLen = 0;
+		rLoc = 862;
+		rType = 0;
+		vrLen = 1734;
+		vrLoc = 0;
+	};
+	5630D6F20BF904CD001337CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
+		name = "XgridFuseFileSystem.m: 315";
+		rLen = 0;
+		rLoc = 9698;
+		rType = 0;
+		vrLen = 1933;
+		vrLoc = 9140;
+	};
+	5630D6F30BF904CD001337CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */;
+		name = "XgridFuseFileSystem.h: 15";
+		rLen = 0;
+		rLoc = 862;
+		rType = 0;
+		vrLen = 1734;
+		vrLoc = 0;
+	};
+	5630D6FD0BF9056E001337CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */;
+		name = "XgridFuseFileSystem.h: 25";
+		rLen = 0;
+		rLoc = 1056;
+		rType = 0;
+		vrLen = 1751;
+		vrLoc = 3;
+	};
+	5630D6FE0BF9056E001337CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */;
+		name = "XgridFuseFileSystem.h: 25";
+		rLen = 0;
+		rLoc = 1056;
+		rType = 0;
+		vrLen = 1751;
+		vrLoc = 3;
+	};
+	5630D6FF0BF9056E001337CB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
+		name = "XgridFuseFileSystem.m: 111";
+		rLen = 0;
+		rLoc = 3685;
+		rType = 0;
+		vrLen = 1271;
+		vrLoc = 2951;
+	};
+	563DBD2E0BAE6D33004A1338 /* XgridFuseFileSystem.m:512 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -655,7 +776,7 @@
 		fileReference = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		functionName = "-releaseFileAtPath:handle:";
 		hitCount = 1;
-		lineNumber = 504;
+		lineNumber = 512;
 		location = "Xgrid FUSE";
 		modificationTime = 199860964.536091;
 		state = 1;
@@ -823,7 +944,7 @@
 		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		name = "XgridFuseFileSystem.m: 92";
 		rLen = 0;
-		rLoc = 3122;
+		rLoc = 3147;
 		rType = 0;
 		vrLen = 1238;
 		vrLoc = 2890;
@@ -1411,7 +1532,7 @@
 		vrLen = 1249;
 		vrLoc = 0;
 	};
-	56CDAE4A0BAF26F600686424 /* XgridFuseFileSystem.m:487 */ = {
+	56CDAE4A0BAF26F600686424 /* XgridFuseFileSystem.m:495 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1421,7 +1542,7 @@
 		fileReference = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		functionName = "-openFileAtPath:mode:";
 		hitCount = 1;
-		lineNumber = 487;
+		lineNumber = 495;
 		location = "Xgrid FUSE";
 		modificationTime = 199860964.536121;
 		state = 1;
@@ -1861,7 +1982,7 @@
 		speakMessage = 0;
 		useDebuggerSideImplementation = 0;
 	};
-	56CDAEDC0BAF2EC500686424 /* XgridFuseFileSystem.m:278 */ = {
+	56CDAEDC0BAF2EC500686424 /* XgridFuseFileSystem.m:280 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1871,7 +1992,7 @@
 		fileReference = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		functionName = "-fileExistsAtPath:isDirectory:";
 		hitCount = 1;
-		lineNumber = 278;
+		lineNumber = 280;
 		location = "Xgrid FUSE";
 		modificationTime = 199860964.536077;
 		state = 1;
@@ -1886,7 +2007,7 @@
 		vrLen = 648;
 		vrLoc = 0;
 	};
-	56DAC2BD0BAE5D780095841E /* XgridFuseFileSystem.m:472 */ = {
+	56DAC2BD0BAE5D780095841E /* XgridFuseFileSystem.m:480 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1896,7 +2017,7 @@
 		fileReference = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		functionName = "-writeFileAtPath:handle:buffer:size:offset:";
 		hitCount = 1;
-		lineNumber = 472;
+		lineNumber = 480;
 		location = XgridFuseFileSystem.ob;
 		modificationTime = 199860963.220476;
 		state = 2;
@@ -1932,7 +2053,7 @@
 		path = /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSSet.h;
 		sourceTree = "<absolute>";
 	};
-	56DEF0700BA79396000EA01E /* XgridFuseFileSystem.m:251 */ = {
+	56DEF0700BA79396000EA01E /* XgridFuseFileSystem.m:253 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1942,7 +2063,7 @@
 		fileReference = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		functionName = "-directoryContentsAtPath:";
 		hitCount = 1;
-		lineNumber = 251;
+		lineNumber = 253;
 		location = XgridFuseFileSystem.ob;
 		modificationTime = 199860963.222397;
 		state = 2;
@@ -2433,7 +2554,7 @@
 		fRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */;
 		name = "XgridFuseFileSystem.m: 92";
 		rLen = 0;
-		rLoc = 3122;
+		rLoc = 3147;
 		rType = 0;
 		vrLen = 1202;
 		vrLoc = 2926;

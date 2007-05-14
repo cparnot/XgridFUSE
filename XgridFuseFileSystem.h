@@ -21,6 +21,8 @@
 	GEZServer *mountedServer;
 	NSDate *modificationDate;
 	NSDate *creationDate;
+	NSDate *mountingDate;
+	
 	/*
 	 // I tried to add job submission by dropping xml files to the FS
 	NSMutableDictionary *extraFiles;
