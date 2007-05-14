@@ -78,6 +78,15 @@ NSString *ReadMeHtmlPath ( )
 	[GEZManager showServerWindow];
 }
 
+//the application will quit if the connection window is closed and no server is connected
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication
+{
+	if ( [GEZServer connectedServer] )
+		return NO;
+	else
+		return YES;
+}
+
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender {
 	//maybe I should implement that
 	//[[GEZManager managedObjectContext] save:NULL];
