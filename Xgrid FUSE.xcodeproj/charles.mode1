@@ -330,7 +330,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>5630D6FF0BF9056E001337CB</string>
+										<string>5630D70E0BF90745001337CB</string>
 										<key>history</key>
 										<array>
 											<string>5624A6E40BA777F6005AE1E6</string>
@@ -630,8 +630,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>5624A5F30BA72FA0005AE1E6</string>
 		<string>1C0AD2B3069F1EA900FABCE6</string>
+		<string>5624A5F30BA72FA0005AE1E6</string>
 		<string>/Users/charles/Docs/Development/cocoa_dev/XgridFUSE/Xgrid FUSE.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -1087,7 +1087,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C0AD2B3069F1EA900FABCE6</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

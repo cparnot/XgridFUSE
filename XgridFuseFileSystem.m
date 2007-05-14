@@ -344,9 +344,9 @@ NSString *ReadMeHtmlPath ( )
 	[finalAttributes setObject:modificationDate forKey:NSFileCreationDate];
 	[finalAttributes setObject:modificationDate forKey:NSFileModificationDate];
 	
-	//file permissions
+	//file permissions: we set the write bit to 1 for directories, because jobs can in fact be deleted
 	if ( [finalAttributes objectForKey:NSFileType] == NSFileTypeDirectory )
-		[finalAttributes setObject:[NSNumber numberWithInt:0550] forKey:NSFilePosixPermissions];
+		[finalAttributes setObject:[NSNumber numberWithInt:0750] forKey:NSFilePosixPermissions];
 	else
 		[finalAttributes setObject:[NSNumber numberWithInt:0440] forKey:NSFilePosixPermissions];
 	[finalAttributes setObject:[NSNumber numberWithInt:geteuid()] forKey:NSFileOwnerAccountID];
@@ -428,6 +428,8 @@ NSString *ReadMeHtmlPath ( )
 
 - (BOOL)removeFileAtPath:(NSString *)path handler:(id)handler
 {
+	//NSLog(@"<%@:%p> %s %@",[self class],self,_cmd, path);
+	
 	GEZJob *removedJob = [mountedServer jobWithFusePath:path];
 	[removedJob performSelectorOnMainThread:@selector(delete) withObject:nil waitUntilDone:NO];
 	return YES;
