@@ -17,7 +17,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>0.2.0</string>
+	<string>0.2.1</string>
 	<key>FUSEFileSystemClass</key>
 	<string>XgridFuseFileSystem</string>
 	<key>GEZStoreType</key>
@@ -38,9 +38,9 @@
 		<key>DebugLogVerboseLevel</key>
 		<string>0</string>
 		<key>FUSEMountName</key>
-		<string>Hello</string>
+		<string>Xgrid</string>
 		<key>FUSEMountPath</key>
-		<string>/Volumes/Hello</string>
+		<string>/Volumes/Xgrid</string>
 	</dict>
 </dict>
 </plist>

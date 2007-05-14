@@ -5,13 +5,14 @@
 Description
 ----------
 
-Xgrid FUSE version 0.2.0 (Universal binary)
+Xgrid FUSE version 0.2.1 (Universal binary)
 
 * Requires Mac OS X 10.4.9
-* Requires MacFUSE Core 0.2.5 or later
+* Requires MacFUSE Core 0.3.0 (only tested with this version)
 
 Xgrid FUSE transforms an Xgrid controller into a file system. Accessing your controller data is now just as easy as plugging an external hard drive. This means your job results will appear as actual files in the Finder or in the Terminal, and you can browse your jobs just like real folders and manipulate results just like real files (well, read-only files). All of this goodness thanks to the fantastic [MacFUSE](http://code.google.com/p/macfuse/) project!
 
+If you were running version 0.2.0, it is strongly recommanded to update to version 0.2.1, as it fixes a number of (embarassing) bugs.
 
 
 How to use
@@ -32,13 +33,13 @@ After downloading the Xgrid FUSE dmg file, double-click it to mount the disk ima
 
 ### Runnning Xgrid FUSE
 
-Double-click on the Xgrid FUSE application icon. A window with a list of local Xgrid controllers should open. To connect to a controller, select it in the list, and click the Connect button (double-arrow icon), or press return. You can also connect to a remote controller by clicking the '+' button and type its address in the sheet that opens. You may be asked for the password to your Xgrid controller.
+Double-click on the Xgrid FUSE application icon. A window with a list of local Xgrid controllers should open. To connect to a controller, select it in the list, and click the Connect button (double-arrow icon), or press return. You can also connect to a remote controller by clicking the '+' button and type its address in the sheet that opens. You may be asked for the password to your Xgrid controller. If you want to quit and not connect to any controller, simply close the window.
 
 ![Connection window](readme-connect-window.png "Connection window")
 
 A new volume should appear on the Desktop (for command-line users, check the <code>/Volumes</code> directory). Inside this volume, you can browse the controller hierarchy, from the grids (usually only one), down to jobs, tasks, and result files. Note that result files will only upload after you select a job. It may take a while to download all the files if your results are large files, or if your connection to the controller is slow.
 
-![Xgrid filesystem hierarchy](readme-xgrid-filesystem-hierarchy.png "Xgrid filesystem hierarchy")
+![Xgrid filesystem hierarchy](readme-hierarchy.png "Xgrid filesystem hierarchy")
 
 Grids and jobs will appear as folder with a name composed of their identifier followed by their actual name (e.g. '-10- My Grid' or '-19289- fasta job'). Tasks will appear as folders, named after their task index. While the results are still loading, the task names will have the word "loading..." appended after the task index.
 
@@ -55,7 +56,6 @@ To quit Xgrid FUSE, eject the disk corresponding to the Xgrid controller by drag
 
 ### Known limitations and bugs
 
-* There is no apparent way to quit Xgrid FUSE when you change your mind and don't want to initiate any connection. It is in fact very easy: Command-Q works as expected, because the menu is not displayed but is actually listening. Of course, <code>/bin/kill</code> also works.
 * You cannot mount more than one controller at a time.
 * The memory used by Xgrid FUSE will be as big as the files that you upload for your job results, which might be too big in some cases, and will cause Xgrid FUSE to crash. Watch out!
 * The Finder will not always display the most recent version of the jobs, tasks and files. Move up and down the hierarchy to force refreshes.
@@ -89,6 +89,14 @@ The code for Xgrid FUSE is open source, and released under the GPL license. Ther
 
 Change Log
 ----------
+
+version 0.2.1
+(May 2007)
+
+* Some sloppy code in version 0.2.0 of Xgrid FUSE was not apparent because MacFUSE 0.2.5 would let it go away with it. This bug in Xgrid FUSE became very apparent when running with MacFUSE 0.3.0: the user would not have rwx permissions at all on the root, which renders the whole application pretty much useless. Now, the permissions are '500' on the root, as they always should have been.
+* Improved behavior when closing the connection window: if no server is connected, the application simply quits (before that, the application would keep running, but would be basically invisible, not in the Dock, no menu)
+* Deleting jobs now actually works. Due to permission settings (again!!), it was not working properly in version 0.2.0 (it used to work long time ago, when the code was dumb. I had not tested this feature again in version 0.2.0, with the supposedly better code).
+
 
 version 0.2.0
 (May 2007)

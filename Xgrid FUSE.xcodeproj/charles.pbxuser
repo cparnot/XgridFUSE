@@ -497,7 +497,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {876, 7630}}";
 			sepNavSelRange = "{13620, 0}";
-			sepNavVisRect = "{{0, 5783}, {876, 690}}";
+			sepNavVisRect = "{{0, 4226}, {876, 690}}";
 			sepNavWindowFrame = "{{15, 355}, {439, 472}}";
 		};
 	};
@@ -831,9 +831,9 @@
 	};
 	563FE6350BB49127007DA165 /* TODO.markdown */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {796, 689}}";
+			sepNavIntBoundsRect = "{{0, 0}, {876, 690}}";
 			sepNavSelRange = "{125, 0}";
-			sepNavVisRect = "{{0, 0}, {796, 689}}";
+			sepNavVisRect = "{{0, 0}, {876, 690}}";
 		};
 	};
 	563FE64A0BB4927A007DA165 /* PBXTextBookmark */ = {
@@ -1006,9 +1006,9 @@
 	};
 	56949A070BE59E1A005C986E /* README.markdown */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {796, 2072}}";
-			sepNavSelRange = "{220, 0}";
-			sepNavVisRect = "{{0, 0}, {796, 689}}";
+			sepNavIntBoundsRect = "{{0, 0}, {876, 2156}}";
+			sepNavSelRange = "{5105, 0}";
+			sepNavVisRect = "{{0, 42}, {876, 478}}";
 			sepNavWindowFrame = "{{38, 27}, {915, 779}}";
 		};
 	};
@@ -1111,7 +1111,7 @@
 		fRef = 56949A070BE59E1A005C986E /* README.markdown */;
 		name = "README.markdown: 36";
 		rLen = 0;
-		rLoc = 2362;
+		rLoc = 2519;
 		rType = 0;
 		vrLen = 1804;
 		vrLoc = 25;
@@ -1200,9 +1200,9 @@
 	};
 	56A502DA0BE94AE4006A5B3F /* README-template1.html */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {796, 689}}";
+			sepNavIntBoundsRect = "{{0, 0}, {876, 690}}";
 			sepNavSelRange = "{605, 0}";
-			sepNavVisRect = "{{0, 0}, {796, 689}}";
+			sepNavVisRect = "{{0, 0}, {876, 690}}";
 		};
 	};
 	56A502E80BE94B23006A5B3F /* PBXTextBookmark */ = {
@@ -1217,9 +1217,9 @@
 	};
 	56A502FE0BE94FE7006A5B3F /* README-template2.html */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {796, 1400}}";
-			sepNavSelRange = "{3083, 0}";
-			sepNavVisRect = "{{0, 711}, {796, 689}}";
+			sepNavIntBoundsRect = "{{0, 0}, {876, 1386}}";
+			sepNavSelRange = "{3078, 0}";
+			sepNavVisRect = "{{0, 696}, {876, 690}}";
 		};
 	};
 	56A503090BE9503D006A5B3F /* PBXTextBookmark */ = {
