@@ -57,7 +57,14 @@ NSString *ReadMeHtmlPath ( )
 - (void)applicationDidFinishLaunching:(NSNotification *)notification
 {
 	[NSApp activateIgnoringOtherApps:YES];
-	[GEZManager showServerWindow];
+
+	if ( _xgridfs_ServerAddress != nil ) {
+		[[GEZServer serverWithAddress:_xgridfs_ServerAddress] connectWithUserInteraction];
+	} else {
+		//NSLog(@"show server window");
+		[GEZManager showServerWindow];
+	}
+	
 	//[GEZManager showXgridPanel];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(serverDidLoad:) name:GEZServerDidLoadNotification object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(serverDidDisconnect:) name:GEZServerDidDisconnectNotification object:nil];
@@ -69,14 +76,20 @@ NSString *ReadMeHtmlPath ( )
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication hasVisibleWindows:(BOOL)flag
 {
-	[NSApp activateIgnoringOtherApps:YES];
-	[GEZManager showServerWindow];
+	if ( _xgridfs_ServerAddress == nil ) {
+		//NSLog(@"show server window");
+		[NSApp activateIgnoringOtherApps:YES];
+		[GEZManager showServerWindow];
+	}
 	return NO;
 }
 
 - (void)applicationDidBecomeActive:(NSNotification *)aNotification
 {
-	[GEZManager showServerWindow];
+	if ( _xgridfs_ServerAddress == nil ) {
+		//NSLog(@"show server window");
+		[GEZManager showServerWindow];
+	}
 }
 
 //the application will quit if the connection window is closed and no server is connected
@@ -115,7 +128,8 @@ NSString *ReadMeHtmlPath ( )
 		[oneJob setDelegate:self];
 	
 	//close the connection window
-	[GEZManager hideServerWindow];
+	if ( _xgridfs_ServerAddress == nil )
+		[GEZManager hideServerWindow];
 	
 	NSLog(@"mount");
 

@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string>XgridFuseApp</string>
 	<key>CFBundleIdentifier</key>
-	<string>parnot.charles.xgridfuse</string>
+	<string>parnot.charles.xgridfs</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -18,14 +18,29 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>0.2.1</string>
+	<key>FUSEFileSystemClass</key>
+	<string>XgridFuseFileSystem</string>
+	<key>GEZStoreType</key>
+	<string>InMemory</string>
 	<key>LSUIElement</key>
-	<string>0</string>
+	<string>1</string>
 	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
+	<string>xgridfs</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>NSUserDefaults</key>
 	<dict>
+		<key>DebugIdentifiersNot</key>
+		<array>
+			<string>GEZJob</string>
+			<string>GEZXgridPanelController</string>
+		</array>
+		<key>DebugLogVerboseLevel</key>
+		<string>0</string>
+		<key>FUSEMountName</key>
+		<string>Xgrid</string>
+		<key>FUSEMountPath</key>
+		<string>/Volumes/Xgrid</string>
 	</dict>
 </dict>
 </plist>

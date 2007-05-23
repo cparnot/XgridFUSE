@@ -15,6 +15,7 @@
 
 #import <MacFUSE-ObjC/FUSEFileSystem.h>
 
+extern NSString *_xgridfs_ServerAddress;
 
 @interface XgridFuseFileSystem : FUSEFileSystem
 {

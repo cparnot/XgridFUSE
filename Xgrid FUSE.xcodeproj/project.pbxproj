@@ -11,34 +11,57 @@
 		5624A5930BA72E50005AE1E6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5624A5910BA72E50005AE1E6 /* Carbon.framework */; };
 		5624A6540BA77501005AE1E6 /* GridEZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5624A6530BA77501005AE1E6 /* GridEZ.framework */; };
 		5624A6690BA7753A005AE1E6 /* XgridFuseFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */; };
-		563FE6360BB49127007DA165 /* TODO.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 563FE6350BB49127007DA165 /* TODO.markdown */; };
+		5630D8390BFA67EB001337CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		5630D84B0BFA6886001337CB /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		5630D86B0BFA6932001337CB /* main-xgridfs.m in Sources */ = {isa = PBXBuildFile; fileRef = 5630D86A0BFA6932001337CB /* main-xgridfs.m */; };
+		5630D8920BFA8668001337CB /* XgridFuseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5630D8910BFA8668001337CB /* XgridFuseAppDelegate.m */; };
+		5630D8FA0BFA8A28001337CB /* XgridFuseApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 569499C90BE599DA005C986E /* XgridFuseApp.icns */; };
+		5630D9070BFA8AC5001337CB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		5630DAFF0BFBBC92001337CB /* GridEZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5624A6530BA77501005AE1E6 /* GridEZ.framework */; };
+		5630DB4B0BFBBEC1001337CB /* xgridfs.app in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107320486CEB800E47090 /* xgridfs.app */; };
+		5630DB540BFBC02E001337CB /* MacFUSE-ObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5630DB530BFBC02D001337CB /* MacFUSE-ObjC.framework */; };
+		5630DB610BFBC04C001337CB /* MacFUSE-ObjC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5630DB530BFBC02D001337CB /* MacFUSE-ObjC.framework */; };
+		5630DBE30BFBC7C6001337CB /* GridEZ-license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 56A500DD0BE8204A006A5B3F /* GridEZ-license.txt */; };
+		5630DBE40BFBC7C8001337CB /* IconFamily-GTResourceFork-licenses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 56A500A10BE81D34006A5B3F /* IconFamily-GTResourceFork-licenses.txt */; };
+		5630DBE50BFBC7C9001337CB /* License-GPL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 56A501500BE8218D006A5B3F /* License-GPL.txt */; };
+		5630DBE60BFBC7CA001337CB /* macfuse-objc-license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 569499DA0BE59C7F005C986E /* macfuse-objc-license.txt */; };
+		5630DBE70BFBC7D5001337CB /* README.html in Resources */ = {isa = PBXBuildFile; fileRef = 56A5029B0BE94885006A5B3F /* README.html */; };
+		5630DBE80BFBC7DE001337CB /* readme-loading-results.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032C0BE95881006A5B3F /* readme-loading-results.png */; };
+		5630DBE90BFBC7E1001337CB /* readme-hierarchy.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032D0BE95881006A5B3F /* readme-hierarchy.png */; };
+		5630DBEA0BFBC7EB001337CB /* readme-disconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032B0BE95881006A5B3F /* readme-disconnect.png */; };
+		5630DBEB0BFBC7EC001337CB /* readme-copy-to-applications.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032A0BE95881006A5B3F /* readme-copy-to-applications.png */; };
+		5630DBEC0BFBC7EF001337CB /* readme-connect-window.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A503290BE95881006A5B3F /* readme-connect-window.png */; };
+		5630DBED0BFBC7F2001337CB /* macfuse-objc-license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 569499DA0BE59C7F005C986E /* macfuse-objc-license.txt */; };
+		5630DBEE0BFBC7F2001337CB /* License-GPL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 56A501500BE8218D006A5B3F /* License-GPL.txt */; };
+		5630DBEF0BFBC7F3001337CB /* IconFamily-GTResourceFork-licenses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 56A500A10BE81D34006A5B3F /* IconFamily-GTResourceFork-licenses.txt */; };
+		5630DBF00BFBC7F4001337CB /* GridEZ-license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 56A500DD0BE8204A006A5B3F /* GridEZ-license.txt */; };
+		5630DBF10BFBC7F9001337CB /* README.html in Resources */ = {isa = PBXBuildFile; fileRef = 56A5029B0BE94885006A5B3F /* README.html */; };
+		5630DBF20BFBC7FC001337CB /* readme-style1.css in Resources */ = {isa = PBXBuildFile; fileRef = 56A503140BE950E9006A5B3F /* readme-style1.css */; };
+		5630DBF30BFBC7FD001337CB /* readme-loading-results.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032C0BE95881006A5B3F /* readme-loading-results.png */; };
+		5630DBF40BFBC7FF001337CB /* readme-hierarchy.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032D0BE95881006A5B3F /* readme-hierarchy.png */; };
+		5630DBF50BFBC802001337CB /* readme-disconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032B0BE95881006A5B3F /* readme-disconnect.png */; };
+		5630DBF60BFBC803001337CB /* readme-copy-to-applications.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032A0BE95881006A5B3F /* readme-copy-to-applications.png */; };
+		5630DBF70BFBC804001337CB /* readme-connect-window.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A503290BE95881006A5B3F /* readme-connect-window.png */; };
+		5630DBF80BFBC80C001337CB /* readme-style1.css in Resources */ = {isa = PBXBuildFile; fileRef = 56A503140BE950E9006A5B3F /* readme-style1.css */; };
 		565505AF0BA7D20F00288B0F /* XgridFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565505AE0BA7D20F00288B0F /* XgridFoundation.framework */; };
 		569499CA0BE599DA005C986E /* XgridFuseApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 569499C90BE599DA005C986E /* XgridFuseApp.icns */; };
-		569499DB0BE59C7F005C986E /* macfuse-objc-license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 569499DA0BE59C7F005C986E /* macfuse-objc-license.txt */; };
-		56949A080BE59E1A005C986E /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 56949A070BE59E1A005C986E /* README.markdown */; };
-		56A5006D0BE81AF5006A5B3F /* MacFUSE-ObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A5006C0BE81AF5006A5B3F /* MacFUSE-ObjC.framework */; };
-		56A500720BE81B06006A5B3F /* MacFUSE-ObjC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56A5006C0BE81AF5006A5B3F /* MacFUSE-ObjC.framework */; };
-		56A500A20BE81D34006A5B3F /* IconFamily-GTResourceFork-licenses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 56A500A10BE81D34006A5B3F /* IconFamily-GTResourceFork-licenses.txt */; };
-		56A500DE0BE8204A006A5B3F /* GridEZ-license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 56A500DD0BE8204A006A5B3F /* GridEZ-license.txt */; };
-		56A501510BE8218D006A5B3F /* License-GPL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 56A501500BE8218D006A5B3F /* License-GPL.txt */; };
-		56A5029C0BE94885006A5B3F /* README.html in Resources */ = {isa = PBXBuildFile; fileRef = 56A5029B0BE94885006A5B3F /* README.html */; };
-		56A502B00BE9499A006A5B3F /* readme-generate.pl in Resources */ = {isa = PBXBuildFile; fileRef = 56A502AF0BE9499A006A5B3F /* readme-generate.pl */; };
-		56A502DB0BE94AE4006A5B3F /* README-template1.html in Resources */ = {isa = PBXBuildFile; fileRef = 56A502DA0BE94AE4006A5B3F /* README-template1.html */; };
-		56A502FF0BE94FE7006A5B3F /* README-template2.html in Resources */ = {isa = PBXBuildFile; fileRef = 56A502FE0BE94FE7006A5B3F /* README-template2.html */; };
-		56A503150BE950E9006A5B3F /* readme-style1.css in Resources */ = {isa = PBXBuildFile; fileRef = 56A503140BE950E9006A5B3F /* readme-style1.css */; };
-		56A5032E0BE95881006A5B3F /* readme-connect-window.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A503290BE95881006A5B3F /* readme-connect-window.png */; };
-		56A5032F0BE95881006A5B3F /* readme-copy-to-applications.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032A0BE95881006A5B3F /* readme-copy-to-applications.png */; };
-		56A503300BE95881006A5B3F /* readme-disconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032B0BE95881006A5B3F /* readme-disconnect.png */; };
-		56A503310BE95881006A5B3F /* readme-loading-results.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032C0BE95881006A5B3F /* readme-loading-results.png */; };
-		56A503320BE95881006A5B3F /* readme-hierarchy.png in Resources */ = {isa = PBXBuildFile; fileRef = 56A5032D0BE95881006A5B3F /* readme-hierarchy.png */; };
 		56DEF0B30BA79FF8000EA01E /* XgridFusePaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DEF0B20BA79FF8000EA01E /* XgridFusePaths.m */; };
 		56E20FA20BA9DB9A00ED9BF9 /* XgridFuseDisk.icns in Resources */ = {isa = PBXBuildFile; fileRef = 56E20FA10BA9DB9A00ED9BF9 /* XgridFuseDisk.icns */; };
 		56E210FB0BAA5BC900ED9BF9 /* GridEZ.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5624A6530BA77501005AE1E6 /* GridEZ.framework */; };
-		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		56F2EE460C04D3EF00E1EB79 /* xgridfs.nib in Resources */ = {isa = PBXBuildFile; fileRef = 56F2EE450C04D3EF00E1EB79 /* xgridfs.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5630D8320BFA67B6001337CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = xgridfs;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		56E210EC0BAA5BB900ED9BF9 /* CopyFiles */ = {
@@ -47,7 +70,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				56A500720BE81B06006A5B3F /* MacFUSE-ObjC.framework in CopyFiles */,
+				5630DB610BFBC04C001337CB /* MacFUSE-ObjC.framework in CopyFiles */,
 				56E210FB0BAA5BC900ED9BF9 /* GridEZ.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,13 +85,20 @@
 		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32CA4F630368D1EE00C91783 /* Xgrid_FUSE_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xgrid_FUSE_Prefix.pch; sourceTree = "<group>"; };
 		5624A5900BA72E50005AE1E6 /* libfuse.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfuse.dylib; path = /usr/local/lib/libfuse.dylib; sourceTree = "<absolute>"; };
 		5624A5910BA72E50005AE1E6 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		5624A6060BA74EE6005AE1E6 /* Dev-Notes.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Dev-Notes.markdown"; sourceTree = "<group>"; };
 		5624A6530BA77501005AE1E6 /* GridEZ.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GridEZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XgridFuseFileSystem.h; sourceTree = "<group>"; };
 		5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XgridFuseFileSystem.m; sourceTree = "<group>"; };
+		5630D7B40BF93052001337CB /* xgridfs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "xgridfs-Info.plist"; sourceTree = "<group>"; };
+		5630D7C80BF93212001337CB /* xgridfs_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = xgridfs_Prefix.pch; sourceTree = "<group>"; };
+		5630D81F0BFA66DA001337CB /* Xgrid FUSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xgrid FUSE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5630D83D0BFA682E001337CB /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/xgridfs.nib; sourceTree = "<group>"; };
+		5630D86A0BFA6932001337CB /* main-xgridfs.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "main-xgridfs.m"; sourceTree = "<group>"; };
+		5630D8900BFA8668001337CB /* XgridFuseAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XgridFuseAppDelegate.h; sourceTree = "<group>"; };
+		5630D8910BFA8668001337CB /* XgridFuseAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XgridFuseAppDelegate.m; sourceTree = "<group>"; };
+		5630DB530BFBC02D001337CB /* MacFUSE-ObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "MacFUSE-ObjC.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		563FE6350BB49127007DA165 /* TODO.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.markdown; sourceTree = "<group>"; };
 		565505AE0BA7D20F00288B0F /* XgridFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XgridFoundation.framework; path = /System/Library/Frameworks/XgridFoundation.framework; sourceTree = "<absolute>"; };
 		56596A790BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSInvocationXgridFuseCategory.h; sourceTree = "<group>"; };
@@ -76,7 +106,6 @@
 		569499C90BE599DA005C986E /* XgridFuseApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = XgridFuseApp.icns; sourceTree = "<group>"; };
 		569499DA0BE59C7F005C986E /* macfuse-objc-license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "macfuse-objc-license.txt"; sourceTree = "<group>"; };
 		56949A070BE59E1A005C986E /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
-		56A5006C0BE81AF5006A5B3F /* MacFUSE-ObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "MacFUSE-ObjC.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A500A10BE81D34006A5B3F /* IconFamily-GTResourceFork-licenses.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "IconFamily-GTResourceFork-licenses.txt"; sourceTree = "<group>"; };
 		56A500DD0BE8204A006A5B3F /* GridEZ-license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GridEZ-license.txt"; sourceTree = "<group>"; };
 		56A501500BE8218D006A5B3F /* License-GPL.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = "License-GPL.txt"; sourceTree = "<group>"; };
@@ -94,10 +123,19 @@
 		56DEF0B20BA79FF8000EA01E /* XgridFusePaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XgridFusePaths.m; sourceTree = "<group>"; };
 		56E20FA10BA9DB9A00ED9BF9 /* XgridFuseDisk.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = XgridFuseDisk.icns; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* Xgrid FUSE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xgrid FUSE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* xgridfs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xgridfs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5630D81D0BFA66DA001337CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5630D9070BFA8AC5001337CB /* Cocoa.framework in Frameworks */,
+				5630DAFF0BFBBC92001337CB /* GridEZ.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072E0486CEB800E47090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,7 +145,7 @@
 				5624A5930BA72E50005AE1E6 /* Carbon.framework in Frameworks */,
 				5624A6540BA77501005AE1E6 /* GridEZ.framework in Frameworks */,
 				565505AF0BA7D20F00288B0F /* XgridFoundation.framework in Frameworks */,
-				56A5006D0BE81AF5006A5B3F /* MacFUSE-ObjC.framework in Frameworks */,
+				5630DB540BFBC02E001337CB /* MacFUSE-ObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +155,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				56A5006C0BE81AF5006A5B3F /* MacFUSE-ObjC.framework */,
+				5630DB530BFBC02D001337CB /* MacFUSE-ObjC.framework */,
 				565505AE0BA7D20F00288B0F /* XgridFoundation.framework */,
 				5624A6530BA77501005AE1E6 /* GridEZ.framework */,
 				5624A5900BA72E50005AE1E6 /* libfuse.dylib */,
@@ -140,7 +178,8 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* Xgrid FUSE.app */,
+				8D1107320486CEB800E47090 /* xgridfs.app */,
+				5630D81F0BFA66DA001337CB /* Xgrid FUSE.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,28 +187,32 @@
 		29B97314FDCFA39411CA2CEA /* Xgrid FUSE */ = {
 			isa = PBXGroup;
 			children = (
+				563FE6350BB49127007DA165 /* TODO.markdown */,
+				5624A6060BA74EE6005AE1E6 /* Dev-Notes.markdown */,
 				56A502620BE93F68006A5B3F /* Documentation */,
-				29B97315FDCFA39411CA2CEA /* Xgrid FUSE */,
-				29B97317FDCFA39411CA2CEA /* Resources */,
+				5630D7DC0BF93278001337CB /* Xgrid FUSE */,
+				29B97315FDCFA39411CA2CEA /* xgridfs */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
 			name = "Xgrid FUSE";
 			sourceTree = "<group>";
 		};
-		29B97315FDCFA39411CA2CEA /* Xgrid FUSE */ = {
+		29B97315FDCFA39411CA2CEA /* xgridfs */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* Xgrid_FUSE_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
+				5630D7C80BF93212001337CB /* xgridfs_Prefix.pch */,
+				5630D7B40BF93052001337CB /* xgridfs-Info.plist */,
+				5630D86A0BFA6932001337CB /* main-xgridfs.m */,
 				56596A790BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.h */,
 				56596A7A0BB0756D00DF9B72 /* NSInvocationXgridFuseCategory.m */,
 				56DEF0B10BA79FF8000EA01E /* XgridFusePaths.h */,
 				56DEF0B20BA79FF8000EA01E /* XgridFusePaths.m */,
 				5624A6670BA7753A005AE1E6 /* XgridFuseFileSystem.h */,
 				5624A6680BA7753A005AE1E6 /* XgridFuseFileSystem.m */,
+				56F2EE450C04D3EF00E1EB79 /* xgridfs.nib */,
 			);
-			name = "Xgrid FUSE";
+			name = xgridfs;
 			sourceTree = "<group>";
 		};
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
@@ -193,10 +236,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5630D7DC0BF93278001337CB /* Xgrid FUSE */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				5630D8900BFA8668001337CB /* XgridFuseAppDelegate.h */,
+				5630D8910BFA8668001337CB /* XgridFuseAppDelegate.m */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+			);
+			name = "Xgrid FUSE";
+			sourceTree = "<group>";
+		};
 		56A502620BE93F68006A5B3F /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
-				563FE6350BB49127007DA165 /* TODO.markdown */,
 				56949A070BE59E1A005C986E /* README.markdown */,
 				56A502AF0BE9499A006A5B3F /* readme-generate.pl */,
 				56A5029B0BE94885006A5B3F /* README.html */,
@@ -204,7 +257,6 @@
 				56A502FE0BE94FE7006A5B3F /* README-template2.html */,
 				56A503140BE950E9006A5B3F /* readme-style1.css */,
 				56A503200BE95842006A5B3F /* Readme-images */,
-				5624A6060BA74EE6005AE1E6 /* Dev-Notes.markdown */,
 				56A501500BE8218D006A5B3F /* License-GPL.txt */,
 				56A500DD0BE8204A006A5B3F /* GridEZ-license.txt */,
 				569499DA0BE59C7F005C986E /* macfuse-objc-license.txt */,
@@ -228,11 +280,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1107260486CEB800E47090 /* Xgrid FUSE */ = {
+		5630D81E0BFA66DA001337CB /* Xgrid FUSE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Xgrid FUSE" */;
+			buildConfigurationList = 5630D8220BFA66DB001337CB /* Build configuration list for PBXNativeTarget "Xgrid FUSE" */;
 			buildPhases = (
-				56A5025C0BE93EFA006A5B3F /* ShellScript */,
+				5630D81B0BFA66DA001337CB /* Resources */,
+				5630DC6A0BFBCBFB001337CB /* ln -s GridEZ */,
+				5630D81C0BFA66DA001337CB /* Sources */,
+				5630D81D0BFA66DA001337CB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5630D8330BFA67B6001337CB /* PBXTargetDependency */,
+			);
+			name = "Xgrid FUSE";
+			productName = "Xgrid FUSE";
+			productReference = 5630D81F0BFA66DA001337CB /* Xgrid FUSE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D1107260486CEB800E47090 /* xgridfs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "xgridfs" */;
+			buildPhases = (
+				5630DC100BFBC871001337CB /* Run Script - Documentation */,
 				8D1107290486CEB800E47090 /* Resources */,
 				56E210EC0BAA5BB900ED9BF9 /* CopyFiles */,
 				8D11072C0486CEB800E47090 /* Sources */,
@@ -242,10 +313,10 @@
 			);
 			dependencies = (
 			);
-			name = "Xgrid FUSE";
+			name = xgridfs;
 			productInstallPath = "$(HOME)/Applications";
 			productName = "Xgrid FUSE";
-			productReference = 8D1107320486CEB800E47090 /* Xgrid FUSE.app */;
+			productReference = 8D1107320486CEB800E47090 /* xgridfs.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -258,53 +329,71 @@
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Xgrid FUSE */;
 			projectDirPath = "";
 			targets = (
-				8D1107260486CEB800E47090 /* Xgrid FUSE */,
+				8D1107260486CEB800E47090 /* xgridfs */,
+				5630D81E0BFA66DA001337CB /* Xgrid FUSE */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5630D81B0BFA66DA001337CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5630DB4B0BFBBEC1001337CB /* xgridfs.app in Resources */,
+				5630D84B0BFA6886001337CB /* MainMenu.nib in Resources */,
+				5630D8FA0BFA8A28001337CB /* XgridFuseApp.icns in Resources */,
+				5630DBE70BFBC7D5001337CB /* README.html in Resources */,
+				5630DBE80BFBC7DE001337CB /* readme-loading-results.png in Resources */,
+				5630DBE90BFBC7E1001337CB /* readme-hierarchy.png in Resources */,
+				5630DBEA0BFBC7EB001337CB /* readme-disconnect.png in Resources */,
+				5630DBEB0BFBC7EC001337CB /* readme-copy-to-applications.png in Resources */,
+				5630DBEC0BFBC7EF001337CB /* readme-connect-window.png in Resources */,
+				5630DBED0BFBC7F2001337CB /* macfuse-objc-license.txt in Resources */,
+				5630DBEE0BFBC7F2001337CB /* License-GPL.txt in Resources */,
+				5630DBEF0BFBC7F3001337CB /* IconFamily-GTResourceFork-licenses.txt in Resources */,
+				5630DBF00BFBC7F4001337CB /* GridEZ-license.txt in Resources */,
+				5630DBF80BFBC80C001337CB /* readme-style1.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D1107290486CEB800E47090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				56E20FA20BA9DB9A00ED9BF9 /* XgridFuseDisk.icns in Resources */,
-				563FE6360BB49127007DA165 /* TODO.markdown in Resources */,
 				569499CA0BE599DA005C986E /* XgridFuseApp.icns in Resources */,
-				569499DB0BE59C7F005C986E /* macfuse-objc-license.txt in Resources */,
-				56949A080BE59E1A005C986E /* README.markdown in Resources */,
-				56A500A20BE81D34006A5B3F /* IconFamily-GTResourceFork-licenses.txt in Resources */,
-				56A500DE0BE8204A006A5B3F /* GridEZ-license.txt in Resources */,
-				56A501510BE8218D006A5B3F /* License-GPL.txt in Resources */,
-				56A5029C0BE94885006A5B3F /* README.html in Resources */,
-				56A502B00BE9499A006A5B3F /* readme-generate.pl in Resources */,
-				56A502DB0BE94AE4006A5B3F /* README-template1.html in Resources */,
-				56A502FF0BE94FE7006A5B3F /* README-template2.html in Resources */,
-				56A503150BE950E9006A5B3F /* readme-style1.css in Resources */,
-				56A5032E0BE95881006A5B3F /* readme-connect-window.png in Resources */,
-				56A5032F0BE95881006A5B3F /* readme-copy-to-applications.png in Resources */,
-				56A503300BE95881006A5B3F /* readme-disconnect.png in Resources */,
-				56A503310BE95881006A5B3F /* readme-loading-results.png in Resources */,
-				56A503320BE95881006A5B3F /* readme-hierarchy.png in Resources */,
+				56F2EE460C04D3EF00E1EB79 /* xgridfs.nib in Resources */,
+				5630DBE30BFBC7C6001337CB /* GridEZ-license.txt in Resources */,
+				5630DBE40BFBC7C8001337CB /* IconFamily-GTResourceFork-licenses.txt in Resources */,
+				5630DBE50BFBC7C9001337CB /* License-GPL.txt in Resources */,
+				5630DBE60BFBC7CA001337CB /* macfuse-objc-license.txt in Resources */,
+				5630DBF10BFBC7F9001337CB /* README.html in Resources */,
+				5630DBF20BFBC7FC001337CB /* readme-style1.css in Resources */,
+				5630DBF30BFBC7FD001337CB /* readme-loading-results.png in Resources */,
+				5630DBF40BFBC7FF001337CB /* readme-hierarchy.png in Resources */,
+				5630DBF50BFBC802001337CB /* readme-disconnect.png in Resources */,
+				5630DBF60BFBC803001337CB /* readme-copy-to-applications.png in Resources */,
+				5630DBF70BFBC804001337CB /* readme-connect-window.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		56A5025C0BE93EFA006A5B3F /* ShellScript */ = {
+		5630DC100BFBC871001337CB /* Run Script - Documentation */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/README.markdown",
-				"$(SRCROOT)/prepare-readme-files.pl",
 				"$(SRCROOT)/README-template2.html",
+				"$(SRCROOT)/prepare-readme-files.pl",
+				"$(SRCROOT)/README.markdown",
 				"$(SRCROOT)/README-template1.html",
 			);
+			name = "Run Script - Documentation";
 			outputPaths = (
 				"$(SRCROOT)/README.html",
 			);
@@ -312,20 +401,51 @@
 			shellPath = /bin/sh;
 			shellScript = "#calling the perl script that will do the job - see script in the project\n./readme-generate.pl;";
 		};
+		5630DC6A0BFBCBFB001337CB /* ln -s GridEZ */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "ln -s GridEZ";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/perl;
+			shellScript = "# the GridEZ.framework is already in xgridfs,\n# so we only need to add a link to it in Xgrid FUSE package, frameworks subdir\n\nmy $target_dir = $ENV{'TARGET_BUILD_DIR'};\nmy $xgridfuse_frameworks_subdir = \"$target_dir/Xgrid FUSE.app/Contents/Frameworks/\";\nmy $xgridfs_framework_subdir = \"../Resources/xgridfs.app/Contents/Frameworks/GridEZ.framework\";\n\nprint \"Creating soft link to framework embedded in xgridfs\\n\";\nmkdir $xgridfuse_frameworks_subdir;\n`ln -s  '$xgridfs_framework_subdir' '$xgridfuse_frameworks_subdir'`;";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5630D81C0BFA66DA001337CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5630D8390BFA67EB001337CB /* main.m in Sources */,
+				5630D8920BFA8668001337CB /* XgridFuseAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				5624A6690BA7753A005AE1E6 /* XgridFuseFileSystem.m in Sources */,
 				56DEF0B30BA79FF8000EA01E /* XgridFusePaths.m in Sources */,
+				5630D86B0BFA6932001337CB /* main-xgridfs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5630D8330BFA67B6001337CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* xgridfs */;
+			targetProxy = 5630D8320BFA67B6001337CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
@@ -344,9 +464,69 @@
 			name = MainMenu.nib;
 			sourceTree = "<group>";
 		};
+		56F2EE450C04D3EF00E1EB79 /* xgridfs.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5630D83D0BFA682E001337CB /* English */,
+			);
+			name = xgridfs.nib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5630D8230BFA66DB001337CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Xgrid FUSE";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		5630D8240BFA66DB001337CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Xgrid FUSE";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -356,23 +536,25 @@
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_4)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../../Library/Frameworks\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../../../Xcode/Products/Release\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/../../../../Xcode/Products/Release\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_4 = "\"$(SRCROOT)/../../../../Xcode/Products/Release\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Xgrid_FUSE_Prefix.pch;
+				GCC_PREFIX_HEADER = xgridfs_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "_FILE_OFFSET_BITS=64";
 				HEADER_SEARCH_PATHS = /usr/local/include;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "xgridfs-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
-				PRODUCT_NAME = "Xgrid FUSE";
+				PRODUCT_NAME = xgridfs;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -390,21 +572,23 @@
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_4)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../../Library/Frameworks\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/../../../../Xcode/Products/Release\"";
 				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)/../../../../Xcode/Products/Release\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_4 = "\"$(SRCROOT)/../../../../Xcode/Products/Release\"";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Xgrid_FUSE_Prefix.pch;
+				GCC_PREFIX_HEADER = xgridfs_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "_FILE_OFFSET_BITS=64";
 				HEADER_SEARCH_PATHS = /usr/local/include;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "xgridfs-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
-				PRODUCT_NAME = "Xgrid FUSE";
+				PRODUCT_NAME = xgridfs;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -432,7 +616,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Xgrid FUSE" */ = {
+		5630D8220BFA66DB001337CB /* Build configuration list for PBXNativeTarget "Xgrid FUSE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5630D8230BFA66DB001337CB /* Debug */,
+				5630D8240BFA66DB001337CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "xgridfs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4B08A954540054247B /* Debug */,

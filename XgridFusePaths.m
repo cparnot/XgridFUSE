@@ -54,7 +54,7 @@
 	if ( job == nil )
 		return nil;
 	
-	//task = simply the number
+	//task = the last component
 	NSArray *allTasks = [[job valueForKey:@"tasks"] allObjects];
 	int index = [[allTasks valueForKeyPath:@"@unionOfObjects.fuseFilename"] indexOfObject:[components objectAtIndex:3]];
 	if ( index == NSNotFound )
