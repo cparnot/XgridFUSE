@@ -49,6 +49,9 @@
 		56E20FA20BA9DB9A00ED9BF9 /* XgridFuseDisk.icns in Resources */ = {isa = PBXBuildFile; fileRef = 56E20FA10BA9DB9A00ED9BF9 /* XgridFuseDisk.icns */; };
 		56E210FB0BAA5BC900ED9BF9 /* GridEZ.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5624A6530BA77501005AE1E6 /* GridEZ.framework */; };
 		56F2EE460C04D3EF00E1EB79 /* xgridfs.nib in Resources */ = {isa = PBXBuildFile; fileRef = 56F2EE450C04D3EF00E1EB79 /* xgridfs.nib */; };
+		56F2EE9F0C04E13300E1EB79 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F2EE9E0C04E13300E1EB79 /* Sparkle.framework */; };
+		56F2F1200C06383500E1EB79 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F2EE9E0C04E13300E1EB79 /* Sparkle.framework */; };
+		56F2F1220C06384D00E1EB79 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56F2EE9E0C04E13300E1EB79 /* Sparkle.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +75,16 @@
 			files = (
 				5630DB610BFBC04C001337CB /* MacFUSE-ObjC.framework in CopyFiles */,
 				56E210FB0BAA5BC900ED9BF9 /* GridEZ.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56F2EEB50C04E15200E1EB79 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				56F2F1220C06384D00E1EB79 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +135,8 @@
 		56DEF0B10BA79FF8000EA01E /* XgridFusePaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XgridFusePaths.h; sourceTree = "<group>"; };
 		56DEF0B20BA79FF8000EA01E /* XgridFusePaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XgridFusePaths.m; sourceTree = "<group>"; };
 		56E20FA10BA9DB9A00ED9BF9 /* XgridFuseDisk.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = XgridFuseDisk.icns; sourceTree = "<group>"; };
+		56F2EE9E0C04E13300E1EB79 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = ../../../../Library/Frameworks/Sparkle.framework; sourceTree = SOURCE_ROOT; };
+		56F2EEDD0C04EC9D00E1EB79 /* README-template3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "README-template3.html"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* xgridfs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xgridfs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,6 +148,8 @@
 			files = (
 				5630D9070BFA8AC5001337CB /* Cocoa.framework in Frameworks */,
 				5630DAFF0BFBBC92001337CB /* GridEZ.framework in Frameworks */,
+				56F2EE9F0C04E13300E1EB79 /* Sparkle.framework in Frameworks */,
+				56F2F1200C06383500E1EB79 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +172,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56F2EE9E0C04E13300E1EB79 /* Sparkle.framework */,
 				5630DB530BFBC02D001337CB /* MacFUSE-ObjC.framework */,
 				565505AE0BA7D20F00288B0F /* XgridFoundation.framework */,
 				5624A6530BA77501005AE1E6 /* GridEZ.framework */,
@@ -255,6 +273,7 @@
 				56A5029B0BE94885006A5B3F /* README.html */,
 				56A502DA0BE94AE4006A5B3F /* README-template1.html */,
 				56A502FE0BE94FE7006A5B3F /* README-template2.html */,
+				56F2EEDD0C04EC9D00E1EB79 /* README-template3.html */,
 				56A503140BE950E9006A5B3F /* readme-style1.css */,
 				56A503200BE95842006A5B3F /* Readme-images */,
 				56A501500BE8218D006A5B3F /* License-GPL.txt */,
@@ -288,6 +307,7 @@
 				5630DC6A0BFBCBFB001337CB /* ln -s GridEZ */,
 				5630D81C0BFA66DA001337CB /* Sources */,
 				5630D81D0BFA66DA001337CB /* Frameworks */,
+				56F2EEB50C04E15200E1EB79 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -329,8 +349,8 @@
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Xgrid FUSE */;
 			projectDirPath = "";
 			targets = (
-				8D1107260486CEB800E47090 /* xgridfs */,
 				5630D81E0BFA66DA001337CB /* Xgrid FUSE */,
+				8D1107260486CEB800E47090 /* xgridfs */,
 			);
 		};
 /* End PBXProject section */
@@ -479,6 +499,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../../Library/Frameworks\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -508,6 +533,11 @@
 					i386,
 				);
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../../../../Library/Frameworks\"";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;

@@ -21,6 +21,8 @@
 //path to README.html file that will be in the root
 NSString *ReadMeHtmlPath ( )
 {
+	//NSLog(@"path = %@", [[NSBundle mainBundle] pathForResource:@"README" ofType:@"html"]);
+
 	return [[NSBundle mainBundle] pathForResource:@"README" ofType:@"html"];
 }
 
@@ -321,6 +323,8 @@ NSString *ReadMeHtmlPath ( )
 
 - (NSDictionary *)fileAttributesAtPath:(NSString *)path
 {
+	//NSLog(@"<%@:%p> %s\npath = %@", [self class],self,_cmd, path);
+
 	//special case: root
 	if ( [path isEqualToString:@"/"] )
 		return [NSDictionary dictionaryWithObjectsAndKeys:
@@ -393,7 +397,9 @@ NSString *ReadMeHtmlPath ( )
 
 - (NSString *)pathContentOfSymbolicLinkAtPath:(NSString *)path
 {
-	if ( ![path isEqualToString:@"/Read Me.html"] )
+	//NSLog(@"<%@:%p> %s\npath = %@", [self class],self,_cmd, path);
+	
+	if ( [path isEqualToString:@"/Read Me.html"] == NO )
 		return @"/dev/null";
 
 	return ReadMeHtmlPath();

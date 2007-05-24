@@ -23,14 +23,27 @@ create_new_file_by_replacing_section_in_file (
 	"README.html" # path for the final file
 	);
 
-#replace contents in the appropriate sections of template 2 (for web site)
+
+#picture names are located in a different path for the next 2 templates
 $readme_markdown_translated =~ s/(readme-.*\.png)/XgridFUSE-readme\/$1/g;
+
+#replace contents in the appropriate sections of template 2 (for web site)
 create_new_file_by_replacing_section_in_file (
 	"README-template2.html", # path of the initial file
 	$header_footer_regex, # regex to identify header and footer to keep in template
 	$readme_markdown_translated, # string to introduce between header and footer
 	"SVN-IGNORE/XgridFUSE-info.html" # path for the final file
 	);
+
+
+#replace contents in the appropriate sections of template 3 (for sparkle info display)
+create_new_file_by_replacing_section_in_file (
+	"README-template3.html", # path of the initial file
+	$header_footer_regex, # regex to identify header and footer to keep in template
+	$readme_markdown_translated, # string to introduce between header and footer
+	"SVN-IGNORE/xgridfuse-sparkle-info.html" # path for the final file
+	);
+
 
 
 exit 0;

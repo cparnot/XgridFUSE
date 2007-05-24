@@ -2,7 +2,7 @@
 
 Xgrid FUSE = main app that starts a new instance of xgridfs on each run and then quits
 
-xgridfs = one instance running for each fuse volume - also includes the Xgrid connection panel
+xgridfs = one instance running for each fuse volume - also includes the Xgrid connection panel (if necessary as decided by GridEZ framework, e.g. if connection problem or if password needed)
 
 
 # Pieces needed to compile Xgrid FUSE targets
@@ -21,7 +21,7 @@ xgridfs = one instance running for each fuse volume - also includes the Xgrid co
 * If you downloaded Xgrid FUSE from Xgrid@Stanford, you should also have the application package, that contains the framework already built
 
 
-# Misc notes MacFuse and MacFuseObjC
+# Misc notes about MacFuse and MacFuseObjC
 
 ## Subclassing FUSEFileSystem
 

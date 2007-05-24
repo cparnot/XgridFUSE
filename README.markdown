@@ -5,14 +5,14 @@
 Description
 ----------
 
-Xgrid FUSE version 0.2.1 (Universal binary)
+Xgrid FUSE version 0.3.0 (Universal binary)
 
 * Requires Mac OS X 10.4.9
 * Requires MacFUSE Core 0.3.0 (only tested with this version)
 
 Xgrid FUSE transforms an Xgrid controller into a file system. Accessing your controller data is now just as easy as plugging an external hard drive. This means your job results will appear as actual files in the Finder or in the Terminal, and you can browse your jobs just like real folders and manipulate results just like real files (well, read-only files). All of this goodness thanks to the fantastic [MacFUSE](http://code.google.com/p/macfuse/) project!
 
-If you were running version 0.2.0, it is strongly recommanded to update to version 0.2.1, as it fixes a number of (embarassing) bugs.
+If you were running version 0.2.0, it is strongly recommanded to update to version 0.3.0, as it fixes a number of (embarassing) bugs.
 
 
 How to use
@@ -41,7 +41,7 @@ A new volume should appear on the Desktop (for command-line users, check the <co
 
 ![Xgrid filesystem hierarchy](readme-hierarchy.png "Xgrid filesystem hierarchy")
 
-Grids and jobs will appear as folder with a name composed of their identifier followed by their actual name (e.g. '-10- My Grid' or '-19289- fasta job'). Tasks will appear as folders, named after their task index. While the results are still loading, the task names will have the word "loading..." appended after the task index.
+Grids and jobs will appear as folder with a name composed of their identifier followed by their actual name (e.g. '-10- My Grid' or '-19289- fasta job'). Tasks will also appear as folders, and will contain the files and stdout/sterr streams as appropriate. While the results are still loading, the task names will simply be numbers and will have the word "loading..." appended after that number.
 
 ![Loading job results](readme-loading-results.png "Loading job results")
 
@@ -54,13 +54,11 @@ To quit Xgrid FUSE, eject the disk corresponding to the Xgrid controller by drag
 
 ![Disconnect to quit](readme-disconnect.png "Disconnect to quit")
 
-### Known limitations and bugs
+### Known limitations
 
-* You cannot mount more than one controller at a time.
 * The memory used by Xgrid FUSE will be as big as the files that you upload for your job results, which might be too big in some cases, and will cause Xgrid FUSE to crash. Watch out!
 * The Finder will not always display the most recent version of the jobs, tasks and files. Move up and down the hierarchy to force refreshes.
 * If you upload the results from a job that is not yet finished, it will only upload the partial results, and will not properly update the content later. The only workaround is to eject the Xgrid volume and restart Xgrid FUSE.
-* Xgrid FUSE relies on [GridEZ.framework](http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/GridEZ-info.html) for the Xgrid interaction, but does not use the GridEZ feature that normally allows to remember previously connected serversm. This is not a problem for local/Bonjour servers that will always show up anyway, but it will be a problem for remote servers, for which you will have to type the address every time you run Xgrid Fuse. If somebody can solve threading issues described in the source code before I have a chance to do it, that would be great..
 
 
 Credits
@@ -89,6 +87,22 @@ The code for Xgrid FUSE is open source, and released under the GPL license. Ther
 
 Change Log
 ----------
+
+version 0.3.0
+(May 2007)
+
+* Behind the scenes, things work quite differently: the main application "Xgrid FUSE" first determines which controller the user wants to connect to; then it starts a separate process "xgridfs" (also a GUI, albeit very limited UI) for the selected controller; then Xgrid FUSE terminates. All of this is transparent to the user.
+* Benefits for the user in terms of features:
+	* Xgrid FUSE remembers previous connections
+	* It is possible to connect to several controllers at the same time
+	* Integration with MacFusion will be easier to implement (not released yet)
+* Changes in the GridEZ framework that made these new features possible
+	* the "Connection Panel" that opens when a connection fails or a password is needed, is now visible even when the application is not active. This means the panel will remain on screeen and will be included in Expos&eacute;. This will prevent the panel to vanish from view in headless app such as Xgrid FUSE.
+	* changed a few things to allow an app to stop a user-initiated connection to a server before it tries to connect; this way, an app can capture the intention of the user (which server did she choose?) and do something with that information (in the case of Xgrid FUSE, this would be: start xgridfs process for the selected server)
+	* changed a few things to allow an app to initiate an interactive connection session, that will let the user know about what happens and type a password if necessary (a "Connection Panel"), all without displaying the GridEZ "Xgrid Controllers" window. This is used by xgridfs.
+* GridEZ framework bug fix: now uses real task names, instead of just numbers. The framework used to assume tasks would be named with just numbers, but task can have symbolic names as defined by the key of the TaskSpecifications dictionary in a job specification. The only drawback is that if some tasks don't have any results at all, they won't appear in the list. The reason is that the only way to know such a task exists would be to have the specifications. It is not always a good idea to retrieve the specifications for a job, they can be big. Anyway, this is an issue that GridEZ will have to deal with eventually.
+
+
 
 version 0.2.1
 (May 2007)

@@ -14,9 +14,11 @@ The sole function and action of this delegate is to allow the user to choose an 
 Once the task is launched, the app can quit.
  */
 
+@class SUUpdater;
+
 @interface XgridFuseAppDelegate : NSObject
 {
-
+	IBOutlet SUUpdater *sparkleUpdater;
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)notification;
