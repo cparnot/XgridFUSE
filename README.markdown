@@ -103,7 +103,7 @@ version 0.3.0
 	* changed a few things to allow an app to stop a user-initiated connection to a server before it tries to connect; this way, an app can capture the intention of the user (which server did she choose?) and do something with that information (in the case of Xgrid FUSE, this would be: start xgridfs process for the selected server)
 	* changed a few things to allow an app to initiate an interactive connection session, that will let the user know about what happens and type a password if necessary (a "Connection Panel"), all without displaying the GridEZ "Xgrid Controllers" window. This is used by xgridfs.
 * GridEZ framework bug fix: now uses real task names, instead of just numbers. The framework used to assume tasks would be named with just numbers, but task can have symbolic names as defined by the key of the TaskSpecifications dictionary in a job specification. The only drawback is that if some tasks don't have any results at all, they won't appear in the list. The reason is that the only way to know such a task exists would be to have the specifications. It is not always a good idea to retrieve the specifications for a job, they can be big. Anyway, this is an issue that GridEZ will have to deal with eventually.
-
+* Added automatic updates using the Sparkle framework
 
 
 version 0.2.1
