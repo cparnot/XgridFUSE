@@ -52,6 +52,7 @@
 		56F2EE9F0C04E13300E1EB79 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F2EE9E0C04E13300E1EB79 /* Sparkle.framework */; };
 		56F2F1200C06383500E1EB79 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F2EE9E0C04E13300E1EB79 /* Sparkle.framework */; };
 		56F2F1220C06384D00E1EB79 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56F2EE9E0C04E13300E1EB79 /* Sparkle.framework */; };
+		56F2F24E0C06685200E1EB79 /* License-Sparkle.txt in Resources */ = {isa = PBXBuildFile; fileRef = 56F2F24D0C06685200E1EB79 /* License-Sparkle.txt */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -135,8 +136,9 @@
 		56DEF0B10BA79FF8000EA01E /* XgridFusePaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XgridFusePaths.h; sourceTree = "<group>"; };
 		56DEF0B20BA79FF8000EA01E /* XgridFusePaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XgridFusePaths.m; sourceTree = "<group>"; };
 		56E20FA10BA9DB9A00ED9BF9 /* XgridFuseDisk.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = XgridFuseDisk.icns; sourceTree = "<group>"; };
-		56F2EE9E0C04E13300E1EB79 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = ../../../../Library/Frameworks/Sparkle.framework; sourceTree = SOURCE_ROOT; };
+		56F2EE9E0C04E13300E1EB79 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = /Library/Frameworks/Sparkle.framework; sourceTree = "<absolute>"; };
 		56F2EEDD0C04EC9D00E1EB79 /* README-template3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "README-template3.html"; sourceTree = "<group>"; };
+		56F2F24D0C06685200E1EB79 /* License-Sparkle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "License-Sparkle.txt"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* xgridfs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xgridfs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -280,6 +282,7 @@
 				56A500DD0BE8204A006A5B3F /* GridEZ-license.txt */,
 				569499DA0BE59C7F005C986E /* macfuse-objc-license.txt */,
 				56A500A10BE81D34006A5B3F /* IconFamily-GTResourceFork-licenses.txt */,
+				56F2F24D0C06685200E1EB79 /* License-Sparkle.txt */,
 			);
 			name = Documentation;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				5630DBEF0BFBC7F3001337CB /* IconFamily-GTResourceFork-licenses.txt in Resources */,
 				5630DBF00BFBC7F4001337CB /* GridEZ-license.txt in Resources */,
 				5630DBF80BFBC80C001337CB /* readme-style1.css in Resources */,
+				56F2F24E0C06685200E1EB79 /* License-Sparkle.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

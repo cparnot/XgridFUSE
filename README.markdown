@@ -71,6 +71,7 @@ Great big thanks to all these terrific people!
 * [macfuse-objc](http://groups.google.com/group/macfuse-devel/browse_thread/thread/45eaaa84d3fae84f/7066f10e217ba19e): Cole Jitkoff, Greg Miller and Ted Bonkenburg
 * [IconFamily source code](http://iconfamily.sourceforge.net/): Troy N. Stephens
 * [GTResourceFork](http://www.ghosttiger.com/?p=117) : Jonathan Grynspan
+* [Sparkle](http://sparkle.artworkapp.com/) that provides all the code necessary for automatic updates and notifications : merci [Andy Matuschak](http://andymatuschak.org/)!
 
 
 Source code
@@ -81,6 +82,7 @@ The code for Xgrid FUSE is open source, and released under the GPL license. Ther
 * Xgrid FUSE does not directly use any of the MacFUSE code and does not include the binary in its distribution. But of course, XgridFuse needs MacFUSE to be able to do anything; the MacFUSE source code and binaries are released under a "BSD-style license" (see also [the MacFUSE website](http://code.google.com/p/macfuse/)).
 * The binary for the macfuse-objc wrappers is used by Xgrid FUSE, and is distributed separately in the form of the MacFUSE-ObjC framework. The license is included in the source code of Xgrid FUSE, see file 'macfuse-objc-license.txt' (Apache license).
 * IconFamily 0.9.2 and GTResourceFork were compiled into the MacFUSE-ObjC framework. Please read the distribution licenses, both are [MIT License](http://iconfamily.sourceforge.net/).
+* Sparkle is also open-source. Please read the distribution license included in the source files.
 * The Xgrid functionality is provided by the GridEZ framework, released by myself, available for [download](http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/GridEZ-info.html) under the LGPL license.
 * See also source files for attributions and licenses.
 
