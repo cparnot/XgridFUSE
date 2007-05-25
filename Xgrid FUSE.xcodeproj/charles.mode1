@@ -282,14 +282,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>23</integer>
-									<integer>20</integer>
-									<integer>16</integer>
+									<integer>28</integer>
+									<integer>26</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 46}, {252, 665}}</string>
+							<string>{{0, 266}, {252, 665}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -308,7 +307,7 @@
 							<real>252</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>60 81 1137 724 0 0 1248 832 </string>
+						<string>32 83 1137 724 0 0 1248 832 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -326,7 +325,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Info.plist</string>
+								<string>xgridfs-Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -334,11 +333,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Info.plist</string>
+										<string>xgridfs-Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>56F2F1A90C065D5000E1EB79</string>
+										<string>56F2F1B40C0662D800E1EB79</string>
 										<key>history</key>
 										<array>
 											<string>56DEF0670BA77CD6000EA01E</string>
@@ -403,12 +402,12 @@
 											<string>56F2EFBB0C05127C00E1EB79</string>
 											<string>56F2F0430C05195B00E1EB79</string>
 											<string>56F2F0980C062E2300E1EB79</string>
-											<string>56F2F0990C062E2300E1EB79</string>
 											<string>56F2F1440C063B1400E1EB79</string>
 											<string>56F2F1450C063B1400E1EB79</string>
 											<string>56F2F1A50C065D5000E1EB79</string>
 											<string>56F2F1A60C065D5000E1EB79</string>
-											<string>56F2F19E0C065D1100E1EB79</string>
+											<string>56F2F1B20C0662D800E1EB79</string>
+											<string>56F2F0990C062E2300E1EB79</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -517,6 +516,7 @@
 											<string>56F2F1A00C065D1100E1EB79</string>
 											<string>56F2F1A70C065D5000E1EB79</string>
 											<string>56F2F1A80C065D5000E1EB79</string>
+											<string>56F2F1B30C0662D800E1EB79</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -528,14 +528,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {863, 678}}</string>
+								<string>{{0, 0}, {863, 475}}</string>
 								<key>RubberWindowFrame</key>
-								<string>60 81 1137 724 0 0 1248 832 </string>
+								<string>32 83 1137 724 0 0 1248 832 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>678pt</string>
+							<string>475pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -548,14 +548,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 683}, {863, 0}}</string>
+								<string>{{0, 480}, {863, 203}}</string>
 								<key>RubberWindowFrame</key>
-								<string>60 81 1137 724 0 0 1248 832 </string>
+								<string>32 83 1137 724 0 0 1248 832 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>0pt</string>
+							<string>203pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -710,12 +710,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>5624A5F30BA72FA0005AE1E6</string>
 		<string>1C0AD2B3069F1EA900FABCE6</string>
+		<string>5624A5F30BA72FA0005AE1E6</string>
 		<string>/Users/charles/Docs/Development/cocoa_dev/XgridFUSE/Xgrid FUSE.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>60 81 1137 724 0 0 1248 832 </string>
+	<string>32 83 1137 724 0 0 1248 832 </string>
 	<key>WindowTools</key>
 	<array>
 		<dict>
@@ -1171,7 +1171,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C0AD2B3069F1EA900FABCE6</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
