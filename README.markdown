@@ -8,7 +8,7 @@ Description
 Xgrid FUSE version 0.3.1 (Universal binary)
 
 * Requires Mac OS X 10.4.9
-* Requires MacFUSE Core 0.3.0 (only tested with this version)
+* Requires MacFUSE Core 0.4.0
 
 Xgrid FUSE transforms an Xgrid controller into a file system. Accessing your controller data is now just as easy as plugging an external hard drive. This means your job results will appear as actual files in the Finder or in the Terminal, and you can browse your jobs just like real folders and manipulate results just like real files (well, read-only files). All of this goodness thanks to the fantastic [MacFUSE](http://code.google.com/p/macfuse/) project!
 
@@ -18,7 +18,7 @@ How to use
 
 ### Installing MacFUSE
 
-Before using Xgrid FUSE, you must install [MacFUSE](http://code.google.com/p/macfuse/). This will install a kernel extension and will require a restart of your machine. The installation itself is very simple and straightforward, but you must be aware that MacFUSE works at a low level in the OS X system. Any bug in MacFUSE or, more likely, in the way Xgrid FUSE interacts with MacFUSE, and it could have serious consequences on the stability of your system. As far as I can tell, this version of Xgrid FUSE has not caused any problem. In addition, MacFUSE has been used in several other applications that have been used by a large number of people. But it is still at an early stage and should be considered experimental. Do not use on production systems (whatever that means), and use at your own risk.
+Before using Xgrid FUSE, you must install [MacFUSE](http://code.google.com/p/macfuse/). The installation itself is very simple and straightforward, but you must be aware that MacFUSE works at a low level in the OS X system. Any bug in MacFUSE or, more likely, in the way Xgrid FUSE interacts with MacFUSE, and it could have serious consequences on the stability of your system. As far as I can tell, this version of Xgrid FUSE has not caused any problem. In addition, MacFUSE has been used in several other applications by a very large number of people. But it is still at an early stage and should be considered experimental. Do not use on production systems (whatever that means), and use at your own risk.
 
 Still motivated? Download the latest version from the [MacFUSE web site](http://code.google.com/p/macfuse/), double-click the installation  package and follow the instructions. Then read on.
 
@@ -96,7 +96,7 @@ version 0.3.1
 	* GridEZ.framework 0.4.5
 	* memory leaks fixed, in particular one that was directly related to the size of files created by the jobs. Many thanks to Bradley Lowekamp for reporting that one!
 	* the database file stored on disk will remain small (it may have been growing over time)
-
+* This version has been tested with MacFUSE Core 0.4.0 and seems to work fine
 
 version 0.3.0
 (May 2007)

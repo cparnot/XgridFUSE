@@ -174,8 +174,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 208806520;
-			PBXWorkspaceStateSaveDate = 208806520;
+			PBXPerProjectTemplateStateSaveDate = 208808962;
+			PBXWorkspaceStateSaveDate = 208808962;
 		};
 		perUserProjectItems = {
 			5615D81F0C6BBD66008A658B = 5615D81F0C6BBD66008A658B /* PBXTextBookmark */;
@@ -200,32 +200,32 @@
 			5615D8FF0C6BD253008A658B = 5615D8FF0C6BD253008A658B /* PBXTextBookmark */;
 			5615D9000C6BD253008A658B = 5615D9000C6BD253008A658B /* PBXTextBookmark */;
 			5615D9010C6BD253008A658B = 5615D9010C6BD253008A658B /* PBXTextBookmark */;
-			5615D9B50C722759008A658B /* PBXTextBookmark */ = 5615D9B50C722759008A658B /* PBXTextBookmark */;
-			5615D9B60C722759008A658B /* PBXTextBookmark */ = 5615D9B60C722759008A658B /* PBXTextBookmark */;
-			5615D9B80C722759008A658B /* PBXTextBookmark */ = 5615D9B80C722759008A658B /* PBXTextBookmark */;
-			5615D9B90C722759008A658B /* PBXTextBookmark */ = 5615D9B90C722759008A658B /* PBXTextBookmark */;
-			5615D9BA0C722759008A658B /* PBXTextBookmark */ = 5615D9BA0C722759008A658B /* PBXTextBookmark */;
-			5615D9BC0C722759008A658B /* PBXTextBookmark */ = 5615D9BC0C722759008A658B /* PBXTextBookmark */;
-			5615D9BD0C722759008A658B /* PBXTextBookmark */ = 5615D9BD0C722759008A658B /* PBXTextBookmark */;
-			5615D9BE0C722759008A658B /* PBXTextBookmark */ = 5615D9BE0C722759008A658B /* PBXTextBookmark */;
-			5615D9C00C722759008A658B /* PBXTextBookmark */ = 5615D9C00C722759008A658B /* PBXTextBookmark */;
-			5615D9C20C722759008A658B /* PBXTextBookmark */ = 5615D9C20C722759008A658B /* PBXTextBookmark */;
-			5615D9C30C722759008A658B /* PBXTextBookmark */ = 5615D9C30C722759008A658B /* PBXTextBookmark */;
-			5615D9C50C722759008A658B /* PBXTextBookmark */ = 5615D9C50C722759008A658B /* PBXTextBookmark */;
-			5615D9C60C722759008A658B /* PBXTextBookmark */ = 5615D9C60C722759008A658B /* PBXTextBookmark */;
-			5615D9C80C722759008A658B /* PBXTextBookmark */ = 5615D9C80C722759008A658B /* PBXTextBookmark */;
-			5615D9C90C722759008A658B /* PBXTextBookmark */ = 5615D9C90C722759008A658B /* PBXTextBookmark */;
-			5615D9CB0C722759008A658B /* PBXTextBookmark */ = 5615D9CB0C722759008A658B /* PBXTextBookmark */;
-			5615D9CC0C722759008A658B /* PBXTextBookmark */ = 5615D9CC0C722759008A658B /* PBXTextBookmark */;
-			5615D9CE0C722759008A658B /* PBXTextBookmark */ = 5615D9CE0C722759008A658B /* PBXTextBookmark */;
-			5615D9D40C72278C008A658B /* PBXTextBookmark */ = 5615D9D40C72278C008A658B /* PBXTextBookmark */;
-			5615D9D50C72278C008A658B /* PBXTextBookmark */ = 5615D9D50C72278C008A658B /* PBXTextBookmark */;
-			5615D9D70C72278C008A658B /* PBXTextBookmark */ = 5615D9D70C72278C008A658B /* PBXTextBookmark */;
-			5615D9D80C72278C008A658B /* PBXTextBookmark */ = 5615D9D80C72278C008A658B /* PBXTextBookmark */;
-			5615D9D90C72278C008A658B /* PBXTextBookmark */ = 5615D9D90C72278C008A658B /* PBXTextBookmark */;
-			5615D9DA0C72278C008A658B /* PBXTextBookmark */ = 5615D9DA0C72278C008A658B /* PBXTextBookmark */;
-			5615D9DC0C72278C008A658B /* PBXTextBookmark */ = 5615D9DC0C72278C008A658B /* PBXTextBookmark */;
-			5615D9DD0C72278C008A658B /* PBXTextBookmark */ = 5615D9DD0C72278C008A658B /* PBXTextBookmark */;
+			5615D9B50C722759008A658B = 5615D9B50C722759008A658B /* PBXTextBookmark */;
+			5615D9B60C722759008A658B = 5615D9B60C722759008A658B /* PBXTextBookmark */;
+			5615D9B80C722759008A658B = 5615D9B80C722759008A658B /* PBXTextBookmark */;
+			5615D9B90C722759008A658B = 5615D9B90C722759008A658B /* PBXTextBookmark */;
+			5615D9BA0C722759008A658B = 5615D9BA0C722759008A658B /* PBXTextBookmark */;
+			5615D9BC0C722759008A658B = 5615D9BC0C722759008A658B /* PBXTextBookmark */;
+			5615D9BD0C722759008A658B = 5615D9BD0C722759008A658B /* PBXTextBookmark */;
+			5615D9BE0C722759008A658B = 5615D9BE0C722759008A658B /* PBXTextBookmark */;
+			5615D9C00C722759008A658B = 5615D9C00C722759008A658B /* PBXTextBookmark */;
+			5615D9C20C722759008A658B = 5615D9C20C722759008A658B /* PBXTextBookmark */;
+			5615D9C30C722759008A658B = 5615D9C30C722759008A658B /* PBXTextBookmark */;
+			5615D9C50C722759008A658B = 5615D9C50C722759008A658B /* PBXTextBookmark */;
+			5615D9C60C722759008A658B = 5615D9C60C722759008A658B /* PBXTextBookmark */;
+			5615D9C80C722759008A658B = 5615D9C80C722759008A658B /* PBXTextBookmark */;
+			5615D9C90C722759008A658B = 5615D9C90C722759008A658B /* PBXTextBookmark */;
+			5615D9CB0C722759008A658B = 5615D9CB0C722759008A658B /* PBXTextBookmark */;
+			5615D9CC0C722759008A658B = 5615D9CC0C722759008A658B /* PBXTextBookmark */;
+			5615D9CE0C722759008A658B = 5615D9CE0C722759008A658B /* PBXTextBookmark */;
+			5615D9D40C72278C008A658B = 5615D9D40C72278C008A658B /* PBXTextBookmark */;
+			5615D9D50C72278C008A658B = 5615D9D50C72278C008A658B /* PBXTextBookmark */;
+			5615D9D70C72278C008A658B = 5615D9D70C72278C008A658B /* PBXTextBookmark */;
+			5615D9D80C72278C008A658B = 5615D9D80C72278C008A658B /* PBXTextBookmark */;
+			5615D9D90C72278C008A658B = 5615D9D90C72278C008A658B /* PBXTextBookmark */;
+			5615D9DA0C72278C008A658B = 5615D9DA0C72278C008A658B /* PBXTextBookmark */;
+			5615D9DC0C72278C008A658B = 5615D9DC0C72278C008A658B /* PBXTextBookmark */;
+			5615D9DD0C72278C008A658B = 5615D9DD0C72278C008A658B /* PBXTextBookmark */;
 			562239850C1527A10074660A = 562239850C1527A10074660A /* PBXTextBookmark */;
 			5624A6150BA74F29005AE1E6 = 5624A6150BA74F29005AE1E6 /* PBXTextBookmark */;
 			5624A6F50BA777F6005AE1E6 = 5624A6F50BA777F6005AE1E6 /* PBXTextBookmark */;
@@ -592,6 +592,7 @@
 	};
 	5615D9B70C722759008A658B /* compile_info.txt */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = text;
 		name = compile_info.txt;
 		path = "/Users/charles/Xcode/Products/Release/Xgrid FUSE.app/Contents/Frameworks/GridEZ.framework/Headers/compile_info.txt";
 		sourceTree = "<absolute>";
@@ -628,6 +629,7 @@
 	};
 	5615D9BB0C722759008A658B /* compile_info.txt */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = text;
 		name = compile_info.txt;
 		path = /Users/charles/Xcode/Products/Release/GridEZ.framework/Headers/compile_info.txt;
 		sourceTree = "<absolute>";
@@ -664,6 +666,7 @@
 	};
 	5615D9BF0C722759008A658B /* compile_info.txt */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = text;
 		name = compile_info.txt;
 		path = "/Users/charles/Xcode/Products/Release/Xgrid FUSE.app/Contents/Frameworks/GridEZ.framework/Headers/compile_info.txt";
 		sourceTree = "<absolute>";
@@ -680,6 +683,7 @@
 	};
 	5615D9C10C722759008A658B /* compile_info.txt */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = text;
 		name = compile_info.txt;
 		path = /Users/charles/Xcode/Products/Release/GridEZ.framework/Headers/compile_info.txt;
 		sourceTree = "<absolute>";
@@ -706,6 +710,7 @@
 	};
 	5615D9C40C722759008A658B /* compile_info.txt */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = text;
 		name = compile_info.txt;
 		path = /Users/charles/Xcode/Products/Release/GridEZ.framework/Headers/compile_info.txt;
 		sourceTree = "<absolute>";
@@ -732,6 +737,7 @@
 	};
 	5615D9C70C722759008A658B /* compile_info.txt */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = text;
 		name = compile_info.txt;
 		path = /Users/charles/Xcode/Products/Release/GridEZ.framework/Headers/compile_info.txt;
 		sourceTree = "<absolute>";
@@ -758,6 +764,7 @@
 	};
 	5615D9CA0C722759008A658B /* compile_info.txt */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = text;
 		name = compile_info.txt;
 		path = /Users/charles/Xcode/Products/Release/GridEZ.framework/Headers/compile_info.txt;
 		sourceTree = "<absolute>";
@@ -784,6 +791,7 @@
 	};
 	5615D9CD0C722759008A658B /* compile_info.txt */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = text;
 		name = compile_info.txt;
 		path = /Users/charles/Xcode/Products/Release/GridEZ.framework/Headers/compile_info.txt;
 		sourceTree = "<absolute>";
@@ -820,6 +828,7 @@
 	};
 	5615D9D60C72278C008A658B /* Info.plist */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = text.xml;
 		name = Info.plist;
 		path = "/Users/charles/Xcode/Products/Release/Xgrid FUSE.app/Contents/Info.plist";
 		sourceTree = "<absolute>";
@@ -866,6 +875,7 @@
 	};
 	5615D9DB0C72278C008A658B /* Info.plist */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = text.xml;
 		name = Info.plist;
 		path = "/Users/charles/Xcode/Products/Release/Xgrid FUSE.app/Contents/Info.plist";
 		sourceTree = "<absolute>";

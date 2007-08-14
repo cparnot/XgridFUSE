@@ -31,7 +31,7 @@ See also <A href="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/
 
 <ul>
 <li>Requires Mac OS X 10.4.9</li>
-<li>Requires MacFUSE Core 0.3.0 (only tested with this version)</li>
+<li>Requires MacFUSE Core 0.4.0</li>
 </ul>
 
 <p>Xgrid FUSE transforms an Xgrid controller into a file system. Accessing your controller data is now just as easy as plugging an external hard drive. This means your job results will appear as actual files in the Finder or in the Terminal, and you can browse your jobs just like real folders and manipulate results just like real files (well, read-only files). All of this goodness thanks to the fantastic <a href="http://code.google.com/p/macfuse/">MacFUSE</a> project!</p>
@@ -40,7 +40,7 @@ See also <A href="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/
 
 <h3>Installing MacFUSE</h3>
 
-<p>Before using Xgrid FUSE, you must install <a href="http://code.google.com/p/macfuse/">MacFUSE</a>. This will install a kernel extension and will require a restart of your machine. The installation itself is very simple and straightforward, but you must be aware that MacFUSE works at a low level in the OS X system. Any bug in MacFUSE or, more likely, in the way Xgrid FUSE interacts with MacFUSE, and it could have serious consequences on the stability of your system. As far as I can tell, this version of Xgrid FUSE has not caused any problem. In addition, MacFUSE has been used in several other applications that have been used by a large number of people. But it is still at an early stage and should be considered experimental. Do not use on production systems (whatever that means), and use at your own risk.</p>
+<p>Before using Xgrid FUSE, you must install <a href="http://code.google.com/p/macfuse/">MacFUSE</a>. The installation itself is very simple and straightforward, but you must be aware that MacFUSE works at a low level in the OS X system. Any bug in MacFUSE or, more likely, in the way Xgrid FUSE interacts with MacFUSE, and it could have serious consequences on the stability of your system. As far as I can tell, this version of Xgrid FUSE has not caused any problem. In addition, MacFUSE has been used in several other applications by a very large number of people. But it is still at an early stage and should be considered experimental. Do not use on production systems (whatever that means), and use at your own risk.</p>
 
 <p>Still motivated? Download the latest version from the <a href="http://code.google.com/p/macfuse/">MacFUSE web site</a>, double-click the installation  package and follow the instructions. Then read on.</p>
 
@@ -118,6 +118,7 @@ See also <A href="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/
 <li>memory leaks fixed, in particular one that was directly related to the size of files created by the jobs. Many thanks to Bradley Lowekamp for reporting that one!</li>
 <li>the database file stored on disk will remain small (it may have been growing over time)</li>
 </ul></li>
+<li>This version has been tested with MacFUSE Core 0.4.0 and seems to work fine</li>
 </ul>
 
 <p>version 0.3.0
