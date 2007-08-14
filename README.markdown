@@ -12,6 +12,7 @@ Xgrid FUSE version 0.3.1 (Universal binary)
 
 Xgrid FUSE transforms an Xgrid controller into a file system. Accessing your controller data is now just as easy as plugging an external hard drive. This means your job results will appear as actual files in the Finder or in the Terminal, and you can browse your jobs just like real folders and manipulate results just like real files (well, read-only files). All of this goodness thanks to the fantastic [MacFUSE](http://code.google.com/p/macfuse/) project!
 
+Note on updating: if you are using the OS X Keychain to store your passwords, you will be prompted twice asking you if you allow some new applications to use it, because there are actually 2 applications running behind the scenes, Xgrid FUSE and xgridfs.
 
 How to use
 ----------
