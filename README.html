@@ -27,7 +27,7 @@ See also <A href="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/
 
 <h2>Description</h2>
 
-<p>Xgrid FUSE version 0.3.0 (Universal binary)</p>
+<p>Xgrid FUSE version 0.3.1 (Universal binary)</p>
 
 <ul>
 <li>Requires Mac OS X 10.4.9</li>
@@ -35,8 +35,6 @@ See also <A href="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/
 </ul>
 
 <p>Xgrid FUSE transforms an Xgrid controller into a file system. Accessing your controller data is now just as easy as plugging an external hard drive. This means your job results will appear as actual files in the Finder or in the Terminal, and you can browse your jobs just like real folders and manipulate results just like real files (well, read-only files). All of this goodness thanks to the fantastic <a href="http://code.google.com/p/macfuse/">MacFUSE</a> project!</p>
-
-<p>If you were running version 0.2.0, it is strongly recommanded to update to version 0.3.0, as it fixes a number of (embarassing) bugs.</p>
 
 <h2>How to use</h2>
 
@@ -109,6 +107,18 @@ See also <A href="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/
 </ul>
 
 <h2>Change Log</h2>
+
+<p>version 0.3.1
+(August 2007)</p>
+
+<ul>
+<li>Updated the GridEZ.framework, which is the "engine" controlling the Xgrid side of things:
+<ul>
+<li>GridEZ.framework 0.4.5</li>
+<li>memory leaks fixed, in particular one that was directly related to the size of files created by the jobs. Many thanks to Bradley Lowekamp for reporting that one!</li>
+<li>the database file stored on disk will remain small (it may have been growing over time)</li>
+</ul></li>
+</ul>
 
 <p>version 0.3.0
 (May 2007)</p>

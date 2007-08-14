@@ -5,14 +5,12 @@
 Description
 ----------
 
-Xgrid FUSE version 0.3.0 (Universal binary)
+Xgrid FUSE version 0.3.1 (Universal binary)
 
 * Requires Mac OS X 10.4.9
 * Requires MacFUSE Core 0.3.0 (only tested with this version)
 
 Xgrid FUSE transforms an Xgrid controller into a file system. Accessing your controller data is now just as easy as plugging an external hard drive. This means your job results will appear as actual files in the Finder or in the Terminal, and you can browse your jobs just like real folders and manipulate results just like real files (well, read-only files). All of this goodness thanks to the fantastic [MacFUSE](http://code.google.com/p/macfuse/) project!
-
-If you were running version 0.2.0, it is strongly recommanded to update to version 0.3.0, as it fixes a number of (embarassing) bugs.
 
 
 How to use
@@ -89,6 +87,16 @@ The code for Xgrid FUSE is open source, and released under the GPL license. Ther
 
 Change Log
 ----------
+
+
+version 0.3.1
+(August 2007)
+
+* Updated the GridEZ.framework, which is the "engine" controlling the Xgrid side of things:
+	* GridEZ.framework 0.4.5
+	* memory leaks fixed, in particular one that was directly related to the size of files created by the jobs. Many thanks to Bradley Lowekamp for reporting that one!
+	* the database file stored on disk will remain small (it may have been growing over time)
+
 
 version 0.3.0
 (May 2007)
