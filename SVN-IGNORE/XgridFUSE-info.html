@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<!-- #bbinclude "xgrid-stanford-head.txt"
+#MY_TITLE#="Xgrid@Stanford"
+#MY_DESCRIPTION#="Xgrid@Stanford, using Xgrid to fit biochemical models"
+-->
+<head>
+	<title>Xgrid@Stanford</title>
+	<meta name="Title" content="Xgrid@Stanford">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="Xgrid@Stanford, using Xgrid to fit biochemical models">
+	<link rel="StyleSheet" href="../../xgrid-stanford.css" type="text/css" title="xgrid-stanford">
+</head>
+<!-- end bbinclude -->
+
+<body onload=" setTimeout('refreshBasicGauge()',60000)">
+
+<!-- #bbinclude "xgrid-stanford-header.txt" -->
+<!-- script to refresh the gauge in the header every minute-->
+<script language="JavaScript" type="text/Javascript"><!--
+function refreshBasicGauge() {
+   if (!document.images) return;
+   document.images['gauge-basic'].src ="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/gauge/gauge-basic.png?" + Math.random();
+   setTimeout('refreshBasicGauge()',60000); // refresh every 60 secs
+}
+//-->
+</script>
+
+<div id="Gauge">
+	<p>
+		<a href="../../html/stats/stats.html">
+		<!--
+			<img src="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/gauge/gauge-basic.png" alt="" height="60" width="90" name="gauge-basic">
+		-->
+		&nbsp;
+		</a>
+	</p>
+</div>
+<div id="Header">
+	<p>
+		<a href="../../index.html">
+			<img src="../../graphics/xgrid-at-stanford.jpg" alt="" height="60" width="468">
+		</a>
+	</p>
+</div>
+<div id="Menu">
+	<table align="center">
+		<tr><td width="30"> <a href="../../index.html"><img src="../../graphics/home.png" alt="Home" height="25" width="75"></a></td></tr>
+		<tr><td width="30"> <a href="../../html/install/install.html"><img src="../../graphics/install.png" alt="Installation" height="25" width="75"></a></td></tr>
+		<tr><td width="30"> <a href="../../html/projects/projects.html"><img src="../../graphics/project.png" alt="Project" height="25" width="75"></a></td></tr>
+		<tr><td width="30"> <a href="../../html/stats/stats.html"><img src="../../graphics/stats.png" alt="Statistics" height="25" width="75"></a></td></tr>
+		<tr><td width="30"> <a href="../../html/news/news.html"><img src="../../graphics/news.png" alt="News" height="25" width="75"></a></td></tr>
+		<tr><td width="30"> <a href="../../html/faqs/faqs.html"><img src="../../graphics/faqs.png" alt="FAQs" height="25" width="75"></a></td></tr>
+		<tr><td width="30"> <a href="../../html/links/links.html"><img src="../../graphics/links.png" alt="Links" height="25" width="75"></a></td></tr>
+		<tr><td width="30"> <a href="../../html/goodies/goodies.html"><img src="../../graphics/goodies.png" alt="Links" height="25" width="75"></a></td></tr>
+	</table>
+</div>
+<!-- end bbinclude -->
+
+<div ID=Contents>
+
+<P><i>This page is linked from the <A href="goodies.html">goodies</A> section.</i></P>
+
+<h1>Xgrid FUSE</h1>
+
+<h3>Download</h3>
+
+<p>
+<A HREF="../../downloads/XgridFUSE.dmg" onClick="javascript:urchinTracker ('/~cparnot/downloads/XgridFUSE-[v0.3.0].dmg');">Xgrid FUSE 0.3.0</A> - Universal binary
+</p>
+
+<!-- Begin markdown contents -->
+
+<!-- the file README.markdown is used to generate html output that will be included in the dmg, in the app help at runtime, and on the web site -->
+
+<h2>Description</h2>
+
+<p>Xgrid FUSE version 0.3.1 (Universal binary)</p>
+
+<ul>
+<li>Requires Mac OS X 10.4.9</li>
+<li>Requires MacFUSE Core 0.4.0</li>
+</ul>
+
+<p>Xgrid FUSE transforms an Xgrid controller into a file system. Accessing your controller data is now just as easy as plugging an external hard drive. This means your job results will appear as actual files in the Finder or in the Terminal, and you can browse your jobs just like real folders and manipulate results just like real files (well, read-only files). All of this goodness thanks to the fantastic <a href="http://code.google.com/p/macfuse/">MacFUSE</a> project!</p>
+
+<h2>How to use</h2>
+
+<h3>Installing MacFUSE</h3>
+
+<p>Before using Xgrid FUSE, you must install <a href="http://code.google.com/p/macfuse/">MacFUSE</a>. The installation itself is very simple and straightforward, but you must be aware that MacFUSE works at a low level in the OS X system. Any bug in MacFUSE or, more likely, in the way Xgrid FUSE interacts with MacFUSE, and it could have serious consequences on the stability of your system. As far as I can tell, this version of Xgrid FUSE has not caused any problem. In addition, MacFUSE has been used in several other applications by a very large number of people. But it is still at an early stage and should be considered experimental. Do not use on production systems (whatever that means), and use at your own risk.</p>
+
+<p>Still motivated? Download the latest version from the <a href="http://code.google.com/p/macfuse/">MacFUSE web site</a>, double-click the installation  package and follow the instructions. Then read on.</p>
+
+<h3>Installing Xgrid FUSE</h3>
+
+<p>After downloading the Xgrid FUSE dmg file, double-click it to mount the disk image on your Desktop. Then copy the Xgrid FUSE application into your Applications folder.</p>
+
+<p><img src="XgridFUSE-readme/readme-copy-to-applications.png" alt="Copying Xgrid FUSE to Applications folder" title="Copying Xgrid FUSE to Applications folder" /></p>
+
+<h3>Runnning Xgrid FUSE</h3>
+
+<p>Double-click on the Xgrid FUSE application icon. A window with a list of local Xgrid controllers should open. To connect to a controller, select it in the list, and click the Connect button (double-arrow icon), or press return. You can also connect to a remote controller by clicking the '+' button and type its address in the sheet that opens. You may be asked for the password to your Xgrid controller. If you want to quit and not connect to any controller, simply close the window.</p>
+
+<p><img src="XgridFUSE-readme/readme-connect-window.png" alt="Connection window" title="Connection window" /></p>
+
+<p>A new volume should appear on the Desktop (for command-line users, check the <code>/Volumes</code> directory). Inside this volume, you can browse the controller hierarchy, from the grids (usually only one), down to jobs, tasks, and result files. Note that result files will only upload after you select a job. It may take a while to download all the files if your results are large files, or if your connection to the controller is slow.</p>
+
+<p><img src="XgridFUSE-readme/readme-hierarchy.png" alt="Xgrid filesystem hierarchy" title="Xgrid filesystem hierarchy" /></p>
+
+<p>Grids and jobs will appear as folder with a name composed of their identifier followed by their actual name (e.g. '-10- My Grid' or '-19289- fasta job'). Tasks will also appear as folders, and will contain the files and stdout/sterr streams as appropriate. While the results are still loading, the task names will simply be numbers and will have the word "loading..." appended after that number.</p>
+
+<p><img src="XgridFUSE-readme/readme-loading-results.png" alt="Loading job results" title="Loading job results" /></p>
+
+<p>Typically, you would then drag the job folders to your local hard drive to get all the results uploaded on your machine. And now, a really cool feature. Just drag the jobs you don't need anymore to the trash and boum, the jobs are deleted from the remote controller! The Finder will ask you confirmation, <code>/bin/rm</code> will not.</p>
+
+<h3>Quitting Xgrid FUSE</h3>
+
+<p>To quit Xgrid FUSE, eject the disk corresponding to the Xgrid controller by dragging it to the trash in the Finder, or using the <code>umount</code> command in the Terminal. A lost connection should have the same effect (with the possibility of an annoying spinning beach ball first).</p>
+
+<p><img src="XgridFUSE-readme/readme-disconnect.png" alt="Disconnect to quit" title="Disconnect to quit" /></p>
+
+<h3>Known limitations</h3>
+
+<ul>
+<li>The memory used by Xgrid FUSE will be as big as the files that you upload for your job results, which might be too big in some cases, and will cause Xgrid FUSE to crash. Watch out!</li>
+<li>The Finder will not always display the most recent version of the jobs, tasks and files. Move up and down the hierarchy to force refreshes.</li>
+<li>If you upload the results from a job that is not yet finished, it will only upload the partial results, and will not properly update the content later. The only workaround is to eject the Xgrid volume and restart Xgrid FUSE.</li>
+</ul>
+
+<h2>Credits</h2>
+
+<p>Great big thanks to all these terrific people!</p>
+
+<ul>
+<li><a href="http://fuse.sourceforge.net/">FUSE project</a></li>
+<li><a href="http://code.google.com/p/macfuse/">MacFUSE</a>: Amit Singh (Google, Inc.)</li>
+<li><a href="http://groups.google.com/group/macfuse-devel/browse_thread/thread/45eaaa84d3fae84f/7066f10e217ba19e">macfuse-objc</a>: Cole Jitkoff, Greg Miller and Ted Bonkenburg</li>
+<li><a href="http://iconfamily.sourceforge.net/">IconFamily source code</a>: Troy N. Stephens</li>
+<li><a href="http://www.ghosttiger.com/?p=117">GTResourceFork</a> : Jonathan Grynspan</li>
+<li><a href="http://sparkle.artworkapp.com/">Sparkle</a> that provides all the code necessary for automatic updates and notifications : merci <a href="http://andymatuschak.org/">Andy Matuschak</a>!</li>
+</ul>
+
+<h2>Source code</h2>
+
+<p>The code for Xgrid FUSE is open source, and released under the GPL license. There are other licenses that apply to these various elements:</p>
+
+<ul>
+<li>Xgrid FUSE does not directly use any of the MacFUSE code and does not include the binary in its distribution. But of course, XgridFuse needs MacFUSE to be able to do anything; the MacFUSE source code and binaries are released under a "BSD-style license" (see also <a href="http://code.google.com/p/macfuse/">the MacFUSE website</a>).</li>
+<li>The binary for the macfuse-objc wrappers is used by Xgrid FUSE, and is distributed separately in the form of the MacFUSE-ObjC framework. The license is included in the source code of Xgrid FUSE, see file 'macfuse-objc-license.txt' (Apache license).</li>
+<li>IconFamily 0.9.2 and GTResourceFork were compiled into the MacFUSE-ObjC framework. Please read the distribution licenses, both are <a href="http://iconfamily.sourceforge.net/">MIT License</a>.</li>
+<li>Sparkle is also open-source. Please read the distribution license included in the source files.</li>
+<li>The Xgrid functionality is provided by the GridEZ framework, released by myself, available for <a href="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/GridEZ-info.html">download</a> under the LGPL license.</li>
+<li>See also source files for attributions and licenses.</li>
+</ul>
+
+<h2>Change Log</h2>
+
+<p>version 0.3.1
+(August 2007)</p>
+
+<ul>
+<li>Updated the GridEZ.framework, which is the "engine" controlling the Xgrid side of things:
+<ul>
+<li>GridEZ.framework 0.4.5</li>
+<li>memory leaks fixed, in particular one that was directly related to the size of files created by the jobs. Many thanks to Bradley Lowekamp for reporting that one!</li>
+<li>the database file stored on disk will remain small (it may have been growing over time)</li>
+</ul></li>
+<li>This version has been tested with MacFUSE Core 0.4.0 and seems to work fine</li>
+</ul>
+
+<p>version 0.3.0
+(May 2007)</p>
+
+<ul>
+<li>Behind the scenes, things work quite differently: the main application "Xgrid FUSE" first determines which controller the user wants to connect to; then it starts a separate process "xgridfs" (also a GUI, albeit very limited UI) for the selected controller; then Xgrid FUSE terminates. All of this is transparent to the user.</li>
+<li>Benefits for the user in terms of features:
+<ul>
+<li>Xgrid FUSE remembers previous connections</li>
+<li>It is possible to connect to several controllers at the same time</li>
+<li>Integration with MacFusion will be easier to implement (not released yet)</li>
+</ul></li>
+<li>Changes in the GridEZ framework that made these new features possible
+<ul>
+<li>the "Connection Panel" that opens when a connection fails or a password is needed, is now visible even when the application is not active. This means the panel will remain on screeen and will be included in Expos&eacute;. This will prevent the panel to vanish from view in headless app such as Xgrid FUSE.</li>
+<li>changed a few things to allow an app to stop a user-initiated connection to a server before it tries to connect; this way, an app can capture the intention of the user (which server did she choose?) and do something with that information (in the case of Xgrid FUSE, this would be: start xgridfs process for the selected server)</li>
+<li>changed a few things to allow an app to initiate an interactive connection session, that will let the user know about what happens and type a password if necessary (a "Connection Panel"), all without displaying the GridEZ "Xgrid Controllers" window. This is used by xgridfs.</li>
+</ul></li>
+<li>GridEZ framework bug fix: now uses real task names, instead of just numbers. The framework used to assume tasks would be named with just numbers, but task can have symbolic names as defined by the key of the TaskSpecifications dictionary in a job specification. The only drawback is that if some tasks don't have any results at all, they won't appear in the list. The reason is that the only way to know such a task exists would be to have the specifications. It is not always a good idea to retrieve the specifications for a job, they can be big. Anyway, this is an issue that GridEZ will have to deal with eventually.</li>
+<li>Added automatic updates using the Sparkle framework</li>
+</ul>
+
+<p>version 0.2.1
+(May 2007)</p>
+
+<ul>
+<li>Some sloppy code in version 0.2.0 of Xgrid FUSE was not apparent because MacFUSE 0.2.5 would let it go away with it. This bug in Xgrid FUSE became very apparent when running with MacFUSE 0.3.0: the user would not have rwx permissions at all on the root, which renders the whole application pretty much useless. Now, the permissions are '500' on the root, as they always should have been.</li>
+<li>Improved behavior when closing the connection window: if no server is connected, the application simply quits (before that, the application would keep running, but would be basically invisible, not in the Dock, no menu)</li>
+<li>Deleting jobs now actually works. Due to permission settings (again!!), it was not working properly in version 0.2.0 (it used to work long time ago, when the code was dumb. I had not tested this feature again in version 0.2.0, with the supposedly better code).</li>
+</ul>
+
+<p>version 0.2.0
+(May 2007)</p>
+
+<ul>
+<li>First public release</li>
+<li>Added "How to use" section in the README file</li>
+<li>Task names now displays a "loading..." suffix while results are loading</li>
+<li>Separate framework for MacFUSE-ObjC</li>
+<li>Instructing GridEZ to use an in-memory coredata store, via GEZStoreType entry in the Info.plist file</li>
+<li>A file 'Read Me.html' appears on the volume that mounts to provide direct link to help file</li>
+</ul>
+
+<p>version 0.1.0
+(April 2007)</p>
+
+<ul>
+<li>First working version</li>
+<li>Initial svn import</li>
+</ul>
+
+
+<!-- End markdown contents -->
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-81039-1";
+urchinTracker();
+</script>
+
+</body>
+
+</html>
